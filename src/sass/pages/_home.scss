@@ -2,21 +2,35 @@
     &__container {
         height: 100vh;
         width: 100vw;
-        z-index: 2000;
         background-image: 
             linear-gradient(
                 to right,
-                $color-primary,
-                $color-primary-lighten
+                rgba($color-primary, .9),
+                rgba($color-primary-lighten, .9)
             );
         overflow: hidden;
     }
 
-    &__video--background {
-        height: 100%;
-        width: 100%;
-        z-index: 1;
-        opacity: .10;
-        object-fit: cover;
+    &__video-background {
+        &--container,
+        &--content {
+            height: 100%;
+            width: 100%;
+        }
+
+        &--container {
+            position: absolute;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        &--content {
+            position: relative;
+            object-fit: cover;
+        }
+    }
+
+    &--text {
+        color: white;
     }
 }
