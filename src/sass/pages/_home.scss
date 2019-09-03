@@ -30,7 +30,13 @@
         }
     }
 
-    &--text {
-        color: white;
+    &__text {
+        &--container {
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+        }
     }
 }
