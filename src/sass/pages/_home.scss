@@ -1,0 +1,22 @@
+.home {
+    &__container {
+        height: 100vh;
+        width: 100vw;
+        z-index: 2000;
+        background-image: 
+            linear-gradient(
+                to right,
+                $color-primary,
+                $color-primary-lighten
+            );
+        overflow: hidden;
+    }
+
+    &__video--background {
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        opacity: .10;
+        object-fit: cover;
+    }
+}
