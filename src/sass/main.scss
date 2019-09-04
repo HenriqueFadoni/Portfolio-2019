@@ -9,5 +9,11 @@
 @import './base/typography';
 @import './base/utilities';
 
+// Component
+@import './components/menu';
+
 // Pages
 @import './pages/home';
+
+// Hamburger Icons
+@import "./assets/hamburgers/hamburgers.scss";

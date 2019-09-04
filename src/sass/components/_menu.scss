@@ -1,0 +1,44 @@
+.menu {
+    &__container {
+        top: 0;
+        right: 0;
+        position: absolute;
+        overflow: hidden;
+    }
+
+    &__container button {
+        top: 1.5rem;
+        right: 1.5rem;
+        position: fixed;
+        text-align: center;
+        z-index: 15;
+    }
+
+    &__container button:focus {
+        outline: none;
+    }
+
+    // Background Animation
+    &__background,
+    &__background--active {
+        top: -1rem;
+        right: -1rem;
+
+        height: 100vh;
+        width: 1px;
+        position: fixed;
+        background-color: orangered;
+
+        transition: all .2s cubic-bezier(0.86, 0, 0.07, 1);
+
+        z-index: 10;
+    }
+
+    &__background--active {
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 20vw;
+        overflow: hidden;
+    }
+}

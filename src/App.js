@@ -2,6 +2,8 @@ import React from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import './sass/main.scss';
 
+import Menu from './containers/Menu/Menu';
+
 import Home from './containers/Home/Home';
 
 function App() {
@@ -14,6 +16,7 @@ function App() {
 
   return (
     <div className="App">
+      <Menu />
       {routers}
     </div>
   );
