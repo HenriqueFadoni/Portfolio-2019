@@ -7,8 +7,8 @@ const Background = props => {
         <div 
             className={
                 isButtonAct ?
-                "menu__background--active" :
-                "menu__background"
+                    "menu__background--active" :
+                    "menu__background"
             }
         >
             &nbsp;

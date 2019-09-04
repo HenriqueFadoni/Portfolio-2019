@@ -1,44 +1,125 @@
 .menu {
-    &__container {
-        top: 0;
-        right: 0;
-        position: absolute;
-        overflow: hidden;
+  // Container and Hamburger Button
+  &__container {
+    top: 0;
+    right: 0;
+    position: absolute;
+    overflow: hidden;
+  }
+
+  &__container button {
+    top: 1.5rem;
+    right: 1.5rem;
+    position: fixed;
+    text-align: center;
+    z-index: 15;
+  }
+
+  &__container button:focus {
+    outline: none;
+  }
+
+  // Background Animation
+  &__background,
+  &__background--active {
+    top: -1rem;
+    right: -1rem;
+
+    height: 100vh;
+    width: 1px;
+    position: fixed;
+    background-color: $color-secondary;
+
+    transition: all 0.2s cubic-bezier(0.86, 0, 0.07, 1);
+
+    z-index: 10;
+  }
+
+  &__background--active {
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 20vw;
+    overflow: hidden;
+  }
+
+  // Navigation
+  &__nav--container,
+  &__nav--container--active {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 14;
+  }
+
+  &__nav--container {
+    opacity: 0;
+    width: 0;
+    transition: all 0.2s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+
+  &__nav--container--active {
+    opacity: 1;
+    width: 20vw;
+    transition: all 0.3s 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+
+  // List
+  &__list--active {
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: minmax(min-content, 1fr);
+    grid-template-rows: repeat(5, minmax(min-content, 5rem)) minmax(min-content, 1fr);
+    padding-top: 10rem;
+
+    align-content: flex-start;
+    justify-content: center;
+
+    list-style: none;
+    text-align: center;
+  }
+
+  &__list {
+    display: none;
+  }
+
+  // Item
+  &__item {
+    margin: 1rem;
+  }
+
+  &__item--link {
+    &,
+    &:link,
+    &:visited {
+      display: inline-block;
+      padding: 1rem 2rem;
+
+      font-family: "Nunito", cursive;
+      font-weight: 700;
+      font-size: 3rem;
+      color: $color-white;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      background-image: linear-gradient(
+          120deg, 
+          transparent 0%, 
+          transparent 50%, 
+          $color-white 50%
+        );
+      background-size: 240%;
+      transition: all 0.3s;
     }
 
-    &__container button {
-        top: 1.5rem;
-        right: 1.5rem;
-        position: fixed;
-        text-align: center;
-        z-index: 15;
+    &:hover,
+    &:active {
+      background-position: 100%;
+      color: $color-secondary;
+      transform: translateX(1rem);
     }
-
-    &__container button:focus {
-        outline: none;
-    }
-
-    // Background Animation
-    &__background,
-    &__background--active {
-        top: -1rem;
-        right: -1rem;
-
-        height: 100vh;
-        width: 1px;
-        position: fixed;
-        background-color: orangered;
-
-        transition: all .2s cubic-bezier(0.86, 0, 0.07, 1);
-
-        z-index: 10;
-    }
-
-    &__background--active {
-        top: 0;
-        right: 0;
-        height: 100vh;
-        width: 20vw;
-        overflow: hidden;
-    }
+  }
 }
