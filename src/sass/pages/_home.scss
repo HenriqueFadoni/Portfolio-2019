@@ -1,42 +1,61 @@
 .home {
-    &__container {
-        height: 100vh;
-        width: 100vw;
-        background-image: 
-            linear-gradient(
-                to right,
-                rgba($color-primary, .9),
-                rgba($color-primary-lighten, .9)
-            );
-        overflow: hidden;
+  &__container {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to right, rgba($color-primary, 0.9), rgba($color-primary-lighten, 0.9));
+    overflow: hidden;
+  }
+
+  &__video-background {
+    &--container,
+    &--content {
+      height: 100%;
+      width: 100%;
     }
 
-    &__video-background {
-        &--container,
-        &--content {
-            height: 100%;
-            width: 100%;
-        }
-
-        &--container {
-            position: absolute;
-            z-index: -1;
-            overflow: hidden;
-        }
-
-        &--content {
-            position: relative;
-            object-fit: cover;
-        }
+    &--container {
+      position: absolute;
+      z-index: -1;
+      overflow: hidden;
     }
 
-    &__text {
-        &--container {
-            height: 100vh;
-            width: 100vw;
-            display: grid;
-            justify-content: center;
-            align-content: center;
-        }
+    &--content {
+      position: relative;
+      object-fit: cover;
     }
+  }
+
+  &__text {
+    &--container {
+      height: 100vh;
+      width: 100vw;
+      display: grid;
+      justify-content: center;
+      align-content: center;
+    }
+
+    &--name-container {
+      display: inline-block;
+      justify-self: center;
+      animation: appear 1.5s;
+    }
+
+    &--subtitle-container {
+      display: inline-block;
+    }
+
+    &--subtitle-container h1 {
+      display: inline-block;
+      overflow: hidden;
+      letter-spacing: 2px;
+      animation: 
+        typing 2s steps(40, end), 
+        blink .5s step-end infinite;
+      white-space: nowrap;
+      font-size: 30px;
+      font-weight: 700;
+      border-right: 4px solid black;
+      box-sizing: border-box;
+    }
+  }
 }

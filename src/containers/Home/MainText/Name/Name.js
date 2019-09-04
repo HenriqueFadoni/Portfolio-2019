@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Name = () => (
-    <div>
-        <h1>Henrique Fadoni</h1>
+    <div className="home__text--name-container">
+        <h1 className="title--courgettee color--white">
+            Henrique Fadoni
+        </h1>
     </div>
 );
 

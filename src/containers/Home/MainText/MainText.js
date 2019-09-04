@@ -8,7 +8,7 @@ const Text = () => (
     <div className="home__text--container">
         <Name />
         <Title />
-        <SubTitle />
+        {/* <SubTitle /> */}
     </div>
 )
 
