@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Title = () => (
-    <div className="home__text--subtitle-container">
-        <h1 className="subtitle--pacifico color--white">
-            Not Another Random Software Developer.
+    <div className="home__text--name-container">
+        <h1 className="title--courgettee color--white">
+            Henrique Fadoni
         </h1>
     </div>
 );
