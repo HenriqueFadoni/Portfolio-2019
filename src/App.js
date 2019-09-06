@@ -1,23 +1,40 @@
 import React from 'react';
-import { Redirect, Route, Switch } from 'react-router-dom';
+import {
+  Route,
+  Switch
+} from 'react-router-dom';
+import { TransitionGroup, CSSTransition } from "react-transition-group";
+
 import './sass/main.scss';
 
 import Menu from './containers/Menu/Menu';
-
 import Home from './containers/Home/Home';
+import About from './containers/About/About';
 
 function App() {
   const routers = (
-    <Switch>
+    <>
       <Route path="/" component={Home} exact />
-      <Redirect to="/" />
-    </Switch>
-  )
+      <Route path="/about" component={About} />
+    </>
+  );
 
   return (
     <div className="App">
       <Menu />
-      {routers}
+      <Route render={({ location }) => (
+        <TransitionGroup>
+          <CSSTransition
+            key={location.key}
+            classNames="fade"
+            timeout={300}
+          >
+            <Switch location={location}>
+              {routers} 
+            </Switch>
+          </CSSTransition>
+        </TransitionGroup>
+      )} />
     </div>
   );
 }
