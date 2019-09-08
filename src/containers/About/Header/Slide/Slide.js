@@ -8,7 +8,7 @@ const Slide = () => {
 
 
 	return (
-		<div className="about__slider--container">
+		<div className="about__header__slider--container">
 			<ProfessionalTxt />
 			<Button />
 		</div>

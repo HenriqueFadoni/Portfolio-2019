@@ -7,7 +7,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
 
-    background-color: $color-primary;
+    background-color: $color-primary-lighten;
   }
 
   &__header {
@@ -17,13 +17,25 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(min-content, 1fr));
     grid-template-rows: 1fr;
-  }
+    overflow: hidden;
 
-  &__slider {
-    &--container {
-      height: 100%;
-      width: 100%;
-      background-color: $color-secondary-lighten;
+    &__slider {
+      &--container {
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+      }
+    }
+
+    &__image {
+      overflow: hidden;
+      clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+
+      & img {
+        height: 100%;
+        width: 110%;
+        z-index: 1;
+      }
     }
   }
 }
