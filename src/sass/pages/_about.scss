@@ -1,0 +1,29 @@
+.about {
+  &__container {
+    height: auto;
+    width: 100vw;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+    background-color: $color-primary;
+  }
+
+  &__header {
+    height: 100vh;
+    width: 100vw;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, 1fr));
+    grid-template-rows: 1fr;
+  }
+
+  &__slider {
+    &--container {
+      height: 100%;
+      width: 100%;
+      background-color: $color-secondary-lighten;
+    }
+  }
+}

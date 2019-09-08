@@ -32,7 +32,7 @@ function App() {
             timeout={500}
           >
             <Switch location={location}>
-              {routers} 
+              {routers}
             </Switch>
           </CSSTransition>
         </TransitionGroup>
