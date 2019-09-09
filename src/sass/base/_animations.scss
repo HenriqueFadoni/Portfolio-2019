@@ -28,6 +28,15 @@
   }
 }
 
+// Text List 
+@keyframes textList {
+  0%, 16.66%, 100% {transform:translate3d(0,-33%,0);}
+  20.66%, 36.32% {transform:translate3d(0,-66%,0);}
+  40.32%,56.98% {transform:translate3d(0,-99%,0);}
+  60.98%,76.64% {transform:translate3d(0,-66%,0);}
+  80.64%,96.3% {transform:translate3d(0,-33%,0);}
+}
+
 //Animation Between Routes
 .fade-enter {
   opacity: 0;

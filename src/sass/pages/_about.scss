@@ -18,7 +18,7 @@
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      background-image: linear-gradient(to top, $color-tertiary, $color-tertiary-darken);
+      background-color: $color-tertiary;
 
       & h1 {
         font-family: "Nunito", cursive;
@@ -28,6 +28,24 @@
 
       & h1:not(:last-child) {
         margin-right: 1rem;
+      }
+    }
+
+    &--text {
+      overflow: hidden;
+      height: 4rem;
+    }
+
+    &--list {
+      margin-top: 0;
+      padding-left: 48rem;
+      list-style: none;
+
+      animation: textList 10s infinite;
+
+      & ul {
+        line-height: 4rem;
+        margin: 0;
       }
     }
   }
