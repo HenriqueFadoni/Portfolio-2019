@@ -1,12 +1,10 @@
-import React from 'react';
+import React from 'react'
 
 const PersonalTxt = () => (
 	<div className="">
 		<h1>PersonalTxt</h1>
-    <p>
-      
-    </p>
+		<p></p>
 	</div>
-);
+)
 
-export default PersonalTxt;
+export default PersonalTxt

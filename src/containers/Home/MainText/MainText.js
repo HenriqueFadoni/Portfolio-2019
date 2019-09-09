@@ -1,13 +1,13 @@
-import React from 'react';
+import React from 'react'
 
-import SubTitle from './SubTitle/SubTitle';
-import Title from './Title/Title';
+import SubTitle from './SubTitle/SubTitle'
+import Title from './Title/Title'
 
 const Text = () => (
-    <div className="home__text--container">
-        <Title />
-        <SubTitle />
-    </div>
-);
+	<div className="home__text--container">
+		<Title />
+		<SubTitle />
+	</div>
+)
 
-export default Text;
+export default Text

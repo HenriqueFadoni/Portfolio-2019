@@ -1,15 +1,15 @@
-import React from 'react';
+import React from 'react'
 
-import Slide from './Slide/Slide';
-import HenriquePhoto from '../../../assets/images/photo_me.jpg';
+import Slide from './Slide/Slide'
+import HenriquePhoto from '../../../assets/images/photo_me.jpg'
 
 const Header = () => (
 	<div className="about__header">
 		<div className="about__header__image">
-			<img src={HenriquePhoto} alt="Henrique's Photo"/>
+			<img src={HenriquePhoto} alt="Henrique's Photo" />
 		</div>
 		<Slide />
 	</div>
-);
+)
 
-export default Header;
+export default Header

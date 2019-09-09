@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
-import Button from './Button/Button';
-import PersonalTxt from './PersonalTxt/PersonalTxt';
-import ProfessionalTxt from './ProfessionalTxt/ProfessinalTxt';
+import Button from './Button/Button'
+// import PersonalTxt from './PersonalTxt/PersonalTxt'
+import ProfessionalTxt from './ProfessionalTxt/ProfessinalTxt'
 
 const Slide = () => {
-	const [selectedText, setSelectedText] = useState(1);
+	const [selectedText, setSelectedText] = useState(1)
 
 	const changeText = val => {
 		if (val === 1) {
-			setSelectedText(1);
+			setSelectedText(1)
 		} else {
-			setSelectedText(2);
+			setSelectedText(2)
 		}
 	}
 
@@ -24,6 +24,6 @@ const Slide = () => {
 			/>
 		</div>
 	)
-};
+}
 
-export default Slide;
+export default Slide
