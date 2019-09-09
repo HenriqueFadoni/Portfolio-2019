@@ -27,8 +27,8 @@
 
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        row-gap: 4rem;
+        grid-template-rows: 30rem auto;
+        row-gap: 2rem;
         justify-content: center;
         align-content: center;
       }
@@ -47,6 +47,7 @@
         & p {
           font-family: "Nunito", cursive;
           font-size: 1.5rem;
+          text-align: justify;
         }
       }
     }

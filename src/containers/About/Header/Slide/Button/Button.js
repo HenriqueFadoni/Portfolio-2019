@@ -21,7 +21,7 @@ const Button = props => (
 			}
 			onClick={() => props.clickHandler(2)}
 		>
-			Professional Background
+			Background
 		</button>
 	</div>
 )

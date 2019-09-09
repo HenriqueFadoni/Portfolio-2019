@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 import Button from './Button/Button'
-// import PersonalTxt from './PersonalTxt/PersonalTxt'
+import PersonalTxt from './PersonalTxt/PersonalTxt'
 import ProfessionalTxt from './ProfessionalTxt/ProfessinalTxt'
 
 const Slide = () => {
@@ -17,7 +17,7 @@ const Slide = () => {
 
 	return (
 		<div className="about__header__slider--container">
-			<ProfessionalTxt />
+			{ selectedText === 1 ? <ProfessionalTxt /> : <PersonalTxt /> }
 			<Button 
 				selectedText={selectedText}
 				clickHandler={changeText}
