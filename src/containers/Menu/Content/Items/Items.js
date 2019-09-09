@@ -1,10 +1,12 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import RouteItem from './RouteItem/RouteItem'
 import LinkItem from './LinkItem/LinkItem'
 
 const Items = props => {
-	const listItems = props.routes.map((route, index) => {
+	const { routes } = props
+	const listItems = routes.map((route, index) => {
 		let render = null
 
 		if (route.title !== 'RESUME') {
@@ -32,3 +34,11 @@ const Items = props => {
 }
 
 export default Items
+
+Items.propTypes = {
+	isButtonAct: PropTypes.bool.isRequired,
+	routes: PropTypes.arrayOf(PropTypes.shape({
+		to: PropTypes.string,
+		title: PropTypes.string
+	})).isRequired
+}

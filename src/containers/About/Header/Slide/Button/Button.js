@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const Button = props => (
 	<div className="about__header__button--container">
@@ -26,3 +27,8 @@ const Button = props => (
 )
 
 export default Button
+
+Button.propTypes = {
+	selectedText: PropTypes.number.isRequired,
+	clickHandler: PropTypes.func.isRequired
+}

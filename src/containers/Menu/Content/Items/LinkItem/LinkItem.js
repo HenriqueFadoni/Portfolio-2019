@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const LinkItem = props => (
 	<a
@@ -12,3 +13,10 @@ const LinkItem = props => (
 )
 
 export default LinkItem
+
+LinkItem.propTypes = {
+	route: PropTypes.shape({
+		to: PropTypes.string,
+		title: PropTypes.string
+	}).isRequired
+}

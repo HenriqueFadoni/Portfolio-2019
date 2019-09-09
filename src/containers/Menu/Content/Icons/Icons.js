@@ -5,6 +5,7 @@ import {
 	faLinkedin,
 	faStackOverflow
 } from '@fortawesome/free-brands-svg-icons'
+import PropTypes from 'prop-types'
 
 const Icons = props => {
 	const [iconList] = useState([
@@ -41,3 +42,7 @@ const Icons = props => {
 }
 
 export default Icons
+
+Icons.propTypes = {
+	isButtonAct: PropTypes.bool.isRequired
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const HamburgerBtn = props => (
 	<button
@@ -16,3 +17,8 @@ const HamburgerBtn = props => (
 )
 
 export default HamburgerBtn
+
+HamburgerBtn.propTypes = {
+	isButtonAct: PropTypes.bool.isRequired,
+	clickHandler: PropTypes.func
+}

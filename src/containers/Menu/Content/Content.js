@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import PropTypes from 'prop-types'
 
 import Items from './Items/Items'
 import Icons from './Icons/Icons'
@@ -22,7 +23,8 @@ const Content = props => {
 			title: 'RESUME'
 		},
 		{
-			to: '/contacts', title: 'CONTACTS'
+			to: '/contacts', 
+			title: 'CONTACTS'
 		}
 	])
 
@@ -39,3 +41,7 @@ const Content = props => {
 }
 
 export default Content
+
+Content.propTypes = {
+	isButtonAct: PropTypes.bool.isRequired
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const Background = props => (
 	<div
@@ -13,3 +14,7 @@ const Background = props => (
 )
 
 export default Background
+
+Background.propTypes = {
+	isButtonAct: PropTypes.bool.isRequired
+}
