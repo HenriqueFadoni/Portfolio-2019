@@ -1,0 +1,61 @@
+.about {
+  &__header {
+    height: 100vh;
+    width: 100vw;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, 1fr));
+    grid-template-rows: 1fr;
+    overflow: hidden;
+
+    &__slider {
+      &--container {
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 30rem auto;
+        row-gap: 2rem;
+        justify-content: center;
+        align-content: center;
+      }
+
+      &--text {
+        height: 100%;
+        width: 100%;
+        padding: 0 10rem;
+        animation: appear 0.5s ease-in;
+
+        & h1 {
+          font-family: "Courgette", cursive;
+          font-size: 4rem;
+          margin-bottom: 3rem;
+        }
+
+        & p {
+          font-family: "Nunito", cursive;
+          font-size: 1.5rem;
+          text-align: justify;
+        }
+      }
+    }
+
+    &__image {
+      overflow: hidden;
+      clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+
+      & img {
+        height: 100%;
+        width: 110%;
+        z-index: 1;
+      }
+    }
+
+    &__button--container {
+      display: flex;
+      justify-self: center;
+    }
+  }
+}

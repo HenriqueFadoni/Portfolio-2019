@@ -8,11 +8,11 @@ const Slide = () => {
 	const [selectedText, setSelectedText] = useState(1)
 
 	const changeText = val => {
-			if (val === 1) {
-				setSelectedText(1)
-			} else {
-				setSelectedText(2)
-			}
+		if (val === 1) {
+			setSelectedText(1)
+		} else {
+			setSelectedText(2)
+		}
 	}
 
 	return (

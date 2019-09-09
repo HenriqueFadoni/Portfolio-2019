@@ -21,7 +21,7 @@
     "sass": "^1.22.10"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start lint",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
