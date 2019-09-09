@@ -24,6 +24,30 @@
         height: 100%;
         width: 100%;
         z-index: 2;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 4rem;
+        justify-content: center;
+        align-content: center;
+      }
+
+      &--text {
+        height: 100%;
+        width: 100%;
+        padding: 0 10rem;
+
+        & h1 {
+          font-family: "Courgette", cursive;
+          font-size: 4rem;
+          margin-bottom: 3rem;
+        }
+
+        & p {
+          font-family: "Nunito", cursive;
+          font-size: 1.5rem;
+        }
       }
     }
 
@@ -36,6 +60,11 @@
         width: 110%;
         z-index: 1;
       }
+    }
+
+    &__button--container {
+      display: flex;
+      justify-self: center;
     }
   }
 }

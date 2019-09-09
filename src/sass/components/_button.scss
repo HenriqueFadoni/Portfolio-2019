@@ -1,0 +1,22 @@
+.button__about--header,
+.button__about--header--active {
+  font-size: 1.5rem;
+  color: $color-white;
+  background-color: transparent;
+}
+
+.button__about--header--active {
+  border: 3px solid $color-white;
+  padding: 1.2rem;
+}
+
+.button__about--header {
+  border: none;
+  opacity: 0.75;
+  padding: 1.4rem 1.5rem;
+  transition: opacity .2s ease-in;
+
+  &:hover {
+    opacity: 1;
+  }
+}
