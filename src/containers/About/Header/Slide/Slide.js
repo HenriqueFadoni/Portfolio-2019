@@ -8,17 +8,21 @@ const Slide = () => {
 	const [selectedText, setSelectedText] = useState(1)
 
 	const changeText = val => {
-		if (val === 1) {
-			setSelectedText(1)
-		} else {
-			setSelectedText(2)
-		}
+			if (val === 1) {
+				setSelectedText(1)
+			} else {
+				setSelectedText(2)
+			}
 	}
 
 	return (
 		<div className="about__header__slider--container">
-			{ selectedText === 1 ? <ProfessionalTxt /> : <PersonalTxt /> }
-			<Button 
+			{
+				selectedText === 1
+					? <ProfessionalTxt />
+					: <PersonalTxt />
+			}
+			<Button
 				selectedText={selectedText}
 				clickHandler={changeText}
 			/>

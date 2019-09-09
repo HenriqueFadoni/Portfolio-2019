@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ProfessionalTxt = () => (
+const ProfessionalTxt = props => (
 	<div className="about__header__slider--text color--white">
 		<h1>Brief Summary</h1>
 		<p>
