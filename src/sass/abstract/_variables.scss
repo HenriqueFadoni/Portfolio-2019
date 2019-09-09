@@ -3,6 +3,9 @@ $color-primary-lighten: lighten($color-primary, 5%);
 
 $color-secondary: orangered;
 $color-secondary-lighten: lighten($color-secondary, 5%);
-$color-secondary-darken: darken($color-secondary, 5%);
+$color-secondary-darken: darken($color-secondary, 10%);
+
+$color-tertiary: rgb(36, 142, 212);
+$color-tertiary-darken: darken($color-tertiary, 10%);
 
 $color-white: white;
