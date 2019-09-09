@@ -1,33 +1,61 @@
 {
-    "env": {
-        "browser": true,
-        "es6": true,
-        "jest": true
-    },
-    "extends": [
-        "standard",
-        "eslint:recommended",
-        "plugin:react/recommended"
-    ],
-    "globals": {
-        "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
-    },
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 2018,
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react"
-    ],
-    "rules": {
-        "indent": ["error", "tab"],
-        "allowIndentationTabs": 0,
-        "no-tabs": 0,
-        "no-trailing-spaces": 0,
-        "space-before-function-paren": 0
-    }
+	"env": {
+		"browser": true,
+		"es6": true,
+		"jest": true
+	},
+	"extends": [
+		"standard",
+		"eslint:recommended",
+		"plugin:react/recommended"
+	],
+	"globals": {
+		"Atomics": "readonly",
+		"SharedArrayBuffer": "readonly"
+	},
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 2018,
+		"sourceType": "module"
+	},
+	"plugins": [
+		"react"
+	],
+	"rules": {
+		"indent": [
+			"error",
+			"tab"
+		],
+		"allowIndentationTabs": 0,
+		"no-tabs": 0,
+		"no-trailing-spaces": 0,
+		"space-before-function-paren": 0
+	},
+	"settings": {
+		"react": {
+			"createClass": "createReactClass",
+			"pragma": "React",
+			"version": "detect", 
+			"flowVersion": "0.53"
+		},
+		"propWrapperFunctions": [
+			"forbidExtraProps",
+			{
+				"property": "freeze",
+				"object": "Object"
+			},
+			{
+				"property": "myFavoriteWrapper"
+			}
+		],
+		"linkComponents": [
+			"Hyperlink",
+			{
+				"name": "Link",
+				"linkAttribute": "to"
+			}
+		]
+	}
 }
