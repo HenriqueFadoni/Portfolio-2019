@@ -7,13 +7,13 @@ const Quote = () => {
 		'I change lives!'
 	]
 
-	renderList = list.map(item => {
-		<li>
+	const renderList = list.map((item, i) => (
+		<li key={i}>
 			<h1 className="color--white">
 				{item}
 			</h1>
 		</li>
-	})
+	))
 
 	return (
 		<div className="about__quote--container">
