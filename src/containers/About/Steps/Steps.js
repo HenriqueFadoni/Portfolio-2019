@@ -6,33 +6,36 @@ const Steps = () => {
 			number: '01.',
 			title: 'Research',
 			message: `
-			Understand the client’s subject matter completely and build on the knowledge related to it, 
-			becoming intimately familiar with the subject matter. Determine methods to address the 
-			specific customer’s needs and requirements.
+				In-depth analysis of the client's needs and requirements. 
+				Leading to extensive learning about the subject matter until 
+				becoming ultimately familiar with the topic. Plan and determine 
+				the best approach to the specific task proposed by the customer.
 			`
 		},
 		{
 			number: '02.',
 			title: 'Design',
 			message: `
-			Misleadingly thought of as the superficial appearance of a product, design actually encompasses
-			 a lot more. It is a cross functional process that includes market research, technical research,
-			 design of a concept, and prototype mockup.
+				Designing, in a nutshell, comprise not only from determining the 
+				superficial appearance of a product. But also by involving market 
+				research, technical research, design of a concept, and prototype mockup. 
+				It is worth saying designing is a cross-functional process which co-depend 
+				in other areas.
 			`
 		},
 		{
 			number: '03.',
 			title: 'Develop',
 			message: `
-			Findings from the research and design phases are utilized for the production of specific products
-			 including materials, systems, and methods. Engineer utilizing the research and designs to produce
-			 commercial products for the customer.
+				All the data collected during the research and design phases, including 
+				materials and methods, are then manipulated for the production of specific 
+				profitable products for the customer.
 			`
 		}
 	]
 
 	const renderList = list.map((item, i) => (
-		<div 
+		<div
 			key={i}
 			className="about-steps__item"
 		>
