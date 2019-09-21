@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Skills = () => (
-  <section>
+  <section className="about-skills__container">
     <div>
       Skills
     </div>
@@ -12,7 +12,7 @@ const Skills = () => (
       </h1>
     </div>
     <div>
-      
+
     </div>
   </section>
 )
