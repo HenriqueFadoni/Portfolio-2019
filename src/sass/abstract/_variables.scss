@@ -9,3 +9,5 @@ $color-tertiary: rgb(36, 142, 212);
 $color-tertiary-darken: darken($color-tertiary, 10%);
 
 $color-white: white;
+$color-grey: #cccccc;
+$color-grey-lighten: lighten($color-grey, 15%); 

@@ -1,0 +1,38 @@
+.about-steps {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    background-color: $color-white !important;
+  }
+
+  &__item {
+    height: 100%;
+    min-width: 100%;
+    padding: 3rem;
+
+    &--title {
+      display: flex;
+      font-size: 3rem;
+      font-family: "Nunito", cursive;
+      align-items: baseline;
+
+      margin-bottom: 2rem;
+
+      & span {
+        color: $color-grey;
+        margin-right: 1rem;
+      }
+    }
+
+    &--paragraph {
+      font-family: "Nunito", cursive;
+      font-size: 1.7rem;
+      color: darken($color-grey, 25%);      
+      text-align: justify;
+    }
+
+    &:hover {
+      background-color: $color-grey-lighten;
+    }
+  }
+}
