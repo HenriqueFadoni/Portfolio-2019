@@ -1,7 +1,37 @@
 .about-skills {
   &__container {
+    min-height: 70vh;
+    height: auto;
+    width: 100%;
+
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
 
     background-color: #eceaea;
+  }
+
+  &__title {
+    font-size: 5rem;
+    font-family: "Courgette", cursive;
+    padding: 4rem;
+  }
+
+  &__quote {
+    display: flex;
+    margin: 2rem; 
+    padding: 2rem;
+    background-color: $color-primary-lighten;
+
+    font-family: "Nunito", cursive;
+    font-size: 1.3rem;
+    color: $color-white;
+
+    justify-content: center;
+    align-items: center;
+
+    & span {
+      color: $color-secondary;
+    }
   }
 }

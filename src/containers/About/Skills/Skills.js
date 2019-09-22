@@ -1,20 +1,15 @@
 import React from 'react'
 
-const Skills = () => (
-  <section className="about-skills__container">
-    <div>
-      Skills
-    </div>
-    <div>
-      <h1>
-        Any good designer can design in ANY medium just like
-        any good developer can program in ANY language.
-      </h1>
-    </div>
-    <div>
+import Title from './Title/Title'
+import Quote from './Quote/Quote'
+import Subjects from './Subjects/Subjects'
 
-    </div>
-  </section>
+const Skills = () => (
+	<section className="about-skills__container">
+		<Title />
+		<Quote />
+		<Subjects />
+	</section>
 )
 
 export default Skills
