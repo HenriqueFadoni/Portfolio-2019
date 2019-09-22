@@ -25,6 +25,35 @@ const Subjects = () => {
 				'TypeScript',
 				'Prop-Types'
 			]
+		},
+		{
+			title: 'Back-End',
+			list: [
+				'Django',
+				'Node.js'
+			]
+		},
+		{
+			title: 'Testing',
+			list: [
+				'Jest',
+				'Ensyme'
+			]
+		},
+		{
+			title: 'Version Control',
+			list: [
+				'GitHub',
+				'BitBucket'
+			]
+		},
+		{
+			title: 'Bonus',
+			list: [
+				'Zepeling',
+				'SCRUM',
+				'Agile'
+			]
 		}
 	]
 
@@ -35,7 +64,7 @@ const Subjects = () => {
 			list={tech.list}
 		/>
 	))
-	
+
 	return (
 		<div className="about-subjects__container">
 			{renderSubjects}
