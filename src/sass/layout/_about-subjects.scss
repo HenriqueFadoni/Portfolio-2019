@@ -2,9 +2,12 @@
   &__container {
     height: auto;
     width: 100%;
+
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+
+    margin-bottom: 5rem;
   }
 
   &__title {
