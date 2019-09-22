@@ -4,6 +4,7 @@ import Header from './Header/Header'
 import Quote from './Quote/Quote'
 import Steps from './Steps/Steps'
 import Skills from './Skills/Skills'
+import Footer from './Footer/Footer'
 
 const About = () => {
 	return (
@@ -12,6 +13,7 @@ const About = () => {
 			<Quote />
 			<Steps />
 			<Skills />
+			<Footer />
 		</div>
 	)
 }

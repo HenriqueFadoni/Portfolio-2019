@@ -8,8 +8,6 @@ const Subjects = () => {
 		{
 			title: 'Programming Languages',
 			list: [
-				'HTML',
-				'CSS',
 				'JavaScript ES8+',
 				'Python',
 				'Java',
@@ -19,12 +17,13 @@ const Subjects = () => {
 		{
 			title: 'Front-End',
 			list: [
+				'HTML',
+				'CSS',
 				'React',
 				'Redux/SAGA',
 				'React Native',
 				'SASS',
-				'TypeScript',
-				'Prop-Types'
+				'TypeScript'
 			]
 		},
 		{
