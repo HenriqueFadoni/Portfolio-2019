@@ -1,10 +1,14 @@
-import React from 'react';
+import React from 'react'
 
-import Pinned from './Pinned/Pinned';
+import Pinned from './Pinned/Pinned'
+import Footer from '../../components/Footer/Footer'
 
 const Portfolio = () => {
 	return (
-		<Pinned />
+		<div>
+			<Pinned />
+			<Footer />
+		</div>
 	)
 }
 
