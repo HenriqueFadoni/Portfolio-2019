@@ -5,7 +5,11 @@ const Subject = props => {
 	const renderList = props.list.map((item, i) => (
 		<div
 			key={`${i}-${item}`}
-			className="about-subjects__item"
+			className={
+				props.isActive
+					? "about-subjects__item"
+					: "about-subjects__item--hidden"
+			}
 		>
 			<h3>{item}</h3>
 		</div>
