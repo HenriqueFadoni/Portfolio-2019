@@ -14,15 +14,16 @@
 @import './components/button';
 @import './components/footer';
 
-// Layout
-@import './layout/about-header';
-@import './layout/about-steps';
-@import './layout/about-skills';
-@import './layout/about-subjects';
-
 // Pages
+  // Home
 @import './pages/home';
-@import './pages/about';
+
+  // About
+@import './pages/about/about';
+@import './pages/about/header/header';
+@import './pages/about/skills/skills';
+@import './pages/about/steps/steps';
+@import './pages/about/subjects/subjects';
 
 // Hamburger Icons
 @import "./assets/hamburgers/hamburgers.scss";
