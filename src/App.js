@@ -11,6 +11,7 @@ import Menu from './containers/Menu/Menu'
 import Home from './containers/Home/Home'
 import About from './containers/About/About'
 import Contact from './containers/Contact/Contact'
+import Portfolio from './containers/Portfolio/Portfolio'
 
 const App = () => {
 	const routers = (
@@ -18,6 +19,7 @@ const App = () => {
 			<Route path="/" component={Home} exact />
 			<Route path="/about" component={About} />
 			<Route path="/contact" component={Contact} />
+			<Route path="/portfolio" component={Portfolio} />
 		</>
 	)
 
