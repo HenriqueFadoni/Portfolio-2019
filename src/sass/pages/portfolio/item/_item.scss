@@ -1,0 +1,59 @@
+.portfolio__pinned {
+  &--item {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 27rem 10rem;
+    padding: 2rem;
+    background: $color-white;
+    border-radius: 0.5rem;
+    @include blurboxshadow;
+
+    &-img {
+      height: 23rem;
+      width: 23rem;
+      overflow: hidden;
+      margin-bottom: 3rem;
+      background: $color-grey-lighten;
+
+      & img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      font-family: "Nunito", cursive;
+      font-size: 2rem;
+
+      & h4 {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &-tag {
+      display: flex;
+      align-items: flex-start;
+
+      & h4 {
+        margin-left: 1rem;
+        font-weight: 400;
+        color: $color-primary-lighten;
+      }
+    }
+
+    &-dot {
+      height: 1.4rem;
+      width: 1.4rem;
+
+      content: "";
+      margin-top: 0.6rem;
+      border-radius: 50%;
+      background-color: $color-secondary-lighten;
+    }
+  }
+}
