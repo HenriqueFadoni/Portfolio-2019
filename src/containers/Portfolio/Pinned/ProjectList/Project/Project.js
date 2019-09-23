@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Project = props => (
-	<div>
+	<div className="portfolio__pinned--item">
 		<div>
 			<img src="" alt=""/>
 		</div>

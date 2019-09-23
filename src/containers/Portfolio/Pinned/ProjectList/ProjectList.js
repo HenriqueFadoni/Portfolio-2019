@@ -12,9 +12,9 @@ const ProjectList = props => {
   ))
 
   return (
-    <div>
+    <>
       {renderList}
-    </div>
+    </>
   )
 }
 

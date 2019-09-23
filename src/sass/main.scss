@@ -1,29 +1,32 @@
 // Abstracts
-@import './abstract/functions';
-@import './abstract/mixins';
-@import './abstract/variables';
+@import "./abstract/functions";
+@import "./abstract/mixins";
+@import "./abstract/variables";
 
 // Base
-@import './base/animations';
-@import './base/base';
-@import './base/typography';
-@import './base/utilities';
+@import "./base/animations";
+@import "./base/base";
+@import "./base/typography";
+@import "./base/utilities";
 
 // Component
-@import './components/menu';
-@import './components/button';
-@import './components/footer';
+@import "./components/menu";
+@import "./components/button";
+@import "./components/footer";
 
 // Pages
-  // Home
-@import './pages/home';
+// Home
+@import "./pages/home";
 
-  // About
-@import './pages/about/about';
-@import './pages/about/header/header';
-@import './pages/about/skills/skills';
-@import './pages/about/steps/steps';
-@import './pages/about/subjects/subjects';
+// About
+@import "./pages/about/about";
+@import "./pages/about/header/header";
+@import "./pages/about/skills/skills";
+@import "./pages/about/steps/steps";
+@import "./pages/about/subjects/subjects";
+
+//Portfolio
+@import "./pages/portfolio/portfolio";
 
 // Hamburger Icons
 @import "./assets/hamburgers/hamburgers.scss";

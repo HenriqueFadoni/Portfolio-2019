@@ -1,0 +1,45 @@
+.portfolio {
+  &__container {
+    min-height: 100vh;
+    height: auto;
+    width: 100vw;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  &__pinned {
+    &--container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: 5rem 1fr;
+      grid-column-gap: 1rem;
+
+      padding: 3rem;
+      background-color: $color-grey;
+    }
+
+    &--title {
+      display: flex;
+      grid-column-start: 1;
+      grid-column-end: -1;
+
+      justify-content: flex-start;
+      align-items: center;
+
+      & h1 {
+        font-family: "Nunito", cursive;
+        font-size: 2.7rem;
+        color: $color-primary-lighten;
+        margin-left: 1rem;
+      }
+    }
+
+    &--item {
+      display: grid;
+      background: $color-white;
+      @include blurboxshadow;
+    }
+  }
+}
