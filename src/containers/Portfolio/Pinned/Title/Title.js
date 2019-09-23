@@ -7,7 +7,7 @@ import {
 const Title = () => (
   <div className="portfolio__pinned--title">
     <FontAwesomeIcon
-      color="#2c3232"
+      color="#ff581a"
       size="2x"
       icon={faStar} 
     />
