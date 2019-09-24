@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 
-import Project from './Project/Project';
+import Project from './Project/Project'
 
 const ProjectList = props => {
   const renderList = props.projectList.map(project => (
@@ -19,3 +20,7 @@ const ProjectList = props => {
 }
 
 export default ProjectList
+
+ProjectList.proptype = {
+  projectList: PropTypes.arrayOf(PropTypes.object).isRequired
+}
