@@ -23,8 +23,8 @@
       background-image: 
         linear-gradient(
           to right, 
-          rgba($color-grey-lighten, 0.7), 
-          rgba($color-grey, 0.7),
+          rgba($color-primary-lighten, 0.7), 
+          rgba($color-primary, 0.7),
           ),
         url("../../../assets/images/pinned-background.jpg");
       background-size: cover;
@@ -41,7 +41,7 @@
       & h1 {
         font-family: "Nunito", cursive;
         font-size: 2.7rem;
-        color: $color-primary-lighten;
+        color: $color-white;
         margin-left: 1rem;
       }
     }
