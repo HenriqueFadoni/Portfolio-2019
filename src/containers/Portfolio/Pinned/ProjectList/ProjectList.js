@@ -4,8 +4,9 @@ import PropTypes from 'prop-types'
 import Project from './Project/Project'
 
 const ProjectList = props => {
-  const renderList = props.projectList.map(project => (
+  const renderList = props.projectList.map((project, i) => (
     <Project 
+      key={`${i}-${project.name}`}
       name={project.name}
       tag={project.tag}
       repoLink={project.repoLink}
