@@ -1,8 +1,8 @@
 import React from 'react'
 
 import ProjectList from '../Pinned/ProjectList/ProjectList'
-import project1 from '../../../assets/images/project-1.png'
 import Title from './Title/Title'
+import project1 from '../../../assets/images/project-1.png'
 
 const OtherProjects = () => {
 	const projectList = [
