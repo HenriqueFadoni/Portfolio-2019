@@ -19,7 +19,7 @@
 
       &:hover {
         & img {
-          filter: blur(10px) grayscale(100%);
+          filter: brightness(.1) grayscale(100%);
         }
       }
 
@@ -73,7 +73,7 @@
   &__icon {
     opacity: 0;
     cursor: pointer;
-    animation: 0.5s appear 0.5s ease-in forwards;
+    animation: 0.2s appear 0.4s ease-in forwards;
     transition: color 0.2s ease-in;
 
     &:hover {
