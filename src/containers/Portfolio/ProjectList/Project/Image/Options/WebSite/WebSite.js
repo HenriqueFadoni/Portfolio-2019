@@ -1,4 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons'
 
@@ -18,3 +20,7 @@ const WebSite = props => (
 )
 
 export default WebSite
+
+WebSite.propTypes = {
+	web: PropTypes.string.isRequired
+}

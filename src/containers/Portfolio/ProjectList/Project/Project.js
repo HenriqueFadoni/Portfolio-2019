@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import Image from './Image/Image'
 import Text from './Text/Text'
@@ -28,3 +29,11 @@ const Project = props => {
 }
 
 export default Project
+
+Project.propTypes = {
+	name: PropTypes.string.isRequired,
+	tag: PropTypes.string.isRequired,
+	image: PropTypes.node.isRequired,
+	repoLink: PropTypes.string.isRequired,
+	webLink: PropTypes.string.isRequired
+}

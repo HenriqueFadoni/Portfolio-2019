@@ -29,7 +29,8 @@ const Subject = props => {
 
 export default Subject
 
-Subject.prototypes = {
+Subject.propTypes = {
 	title: PropTypes.string.isRequired,
-	list: PropTypes.arrayOf(PropTypes.string).isRequired
+	list: PropTypes.arrayOf(PropTypes.string).isRequired,
+	isActive: PropTypes.bool.isRequired
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const Text = props => (
 	<div className="portfolio__pinned--item-text">
@@ -11,3 +12,8 @@ const Text = props => (
 )
 
 export default Text
+
+Text.propTypes = {
+	name: PropTypes.string.isRequired,
+	tag: PropTypes.string.isRequired
+}

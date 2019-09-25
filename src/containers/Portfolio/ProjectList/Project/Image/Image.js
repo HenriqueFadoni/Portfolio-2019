@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import PropTypes from 'prop-types'
 
 import Options from './Options/Options'
 
@@ -30,3 +31,12 @@ const Image = props => {
 }
 
 export default Image
+
+Image.propTypes = {
+	image: PropTypes.node.isRequired,
+	repoLink: PropTypes.string.isRequired,
+	webLink: PropTypes.oneOfType([
+		PropTypes.bool,
+		PropTypes.string
+	]).isRequired
+}

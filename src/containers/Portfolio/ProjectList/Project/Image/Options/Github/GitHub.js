@@ -1,4 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithubAlt } from '@fortawesome/free-brands-svg-icons'
 
@@ -23,3 +25,8 @@ const GitHub = props => (
 )
 
 export default GitHub
+
+GitHub.propTypes = {
+	repo: PropTypes.string.isRequired,
+	web: PropTypes.string.isRequired
+}

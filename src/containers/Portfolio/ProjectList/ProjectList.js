@@ -24,6 +24,6 @@ const ProjectList = props => {
 
 export default ProjectList
 
-ProjectList.proptype = {
+ProjectList.propTypes = {
 	projectList: PropTypes.arrayOf(PropTypes.object).isRequired
 }
