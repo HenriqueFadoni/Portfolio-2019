@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ProjectList from '../Pinned/ProjectList/ProjectList'
+import ProjectList from '../ProjectList/ProjectList'
 import Title from './Title/Title'
 
 import project1 from '../../../assets/images/project-1.png'

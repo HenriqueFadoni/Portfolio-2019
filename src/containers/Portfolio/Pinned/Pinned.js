@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Title from './Title/Title'
-import ProjectList from './ProjectList/ProjectList'
+import ProjectList from '../ProjectList/ProjectList'
 import project1 from '../../../assets/images/project-1.png'
 
 const Pinned = () => {
