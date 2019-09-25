@@ -1,9 +1,14 @@
 import React from 'react'
 
+import TopMenu from './TopMenu/TopMenu'
+
 const Contact = () => {
 	return (
 		<div>
-			Contact
+			<TopMenu />
+			<div>
+				Contact
+			</div>
 		</div>
 	)
 }

@@ -23,7 +23,7 @@ const Content = props => {
 			title: 'RESUME'
 		},
 		{
-			to: '/contacts', 
+			to: '/contact', 
 			title: 'CONTACTS'
 		}
 	])
