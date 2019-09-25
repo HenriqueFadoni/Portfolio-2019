@@ -16,9 +16,16 @@
       background: $color-grey-lighten;
       overflow: hidden;
 
+      &:hover {
+        & img {
+          filter: blur(10px) grayscale(100%);
+        }
+      }
+
       & img {
         height: 110%;
         width: 160%;
+        transition: all 0.5s ease-in;
       }
     }
 
