@@ -15,6 +15,7 @@
       margin-bottom: 3rem;
       background: $color-grey-lighten;
       overflow: hidden;
+      position: relative;
 
       &:hover {
         & img {
@@ -65,5 +66,32 @@
       border-radius: 50%;
       background-color: $color-secondary-lighten;
     }
+  }
+}
+
+.portfolio {
+  &__icon {
+    opacity: 0;
+    cursor: pointer;
+    animation: 0.5s appear 0.5s ease-in forwards;
+    transition: color 0.2s ease-in;
+
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+
+  &__options {
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 2;
   }
 }

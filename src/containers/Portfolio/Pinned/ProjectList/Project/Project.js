@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
+
+import Options from './Options/Options'
 
 const Project = props => {
 	const [show, setShow] = useState(false);
@@ -14,13 +16,10 @@ const Project = props => {
 				onMouseLeave={onHoverLeave}
 			>
 				{
-					show ?
-						<div>
-							<button>A</button>
-						</div>
+					show
+						? <Options />
 						: null
 				}
-
 				<img src={props.repoLink} alt="Project Image" />
 			</div>
 			<div className="portfolio__pinned--item-text">
