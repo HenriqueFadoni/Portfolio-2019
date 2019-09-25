@@ -10,12 +10,48 @@ import project5 from '../../../assets/images/project-5.png'
 
 const OtherProjects = () => {
 	const projectList = [
-		{ name: 'Money Now', tag: 'React', repoLink: project2 },
-		{ name: 'Crypto Currency App', tag: 'React Native', repoLink: project1 },
-		{ name: 'NPM Library', tag: 'React', repoLink: project4 },
-		{ name: 'Cocktail Finder', tag: 'React Native', repoLink: project1 },
-		{ name: 'Burguer Builder', tag: 'React', repoLink: project5 },
-		{ name: 'DashBoard', tag: 'React', repoLink: project1 }
+		{ 
+			name: 'Money Now', 
+			tag: 'React', 
+			image: project2,
+			repoLink: 'https://github.com/HenriqueFadoni/money-now',
+			webLink: 'https://henriquefadoni.github.io/money-now/'
+		},
+		{ 
+			name: 'Crypto Currency App',
+			tag: 'React Native',
+			image: project1, 
+			repoLink: 'https://github.com/HenriqueFadoni/crypto-currency-app',
+			webLink: false
+		},
+		{ 
+			name: 'NPM Library',
+			tag: 'React',
+			image: project4 ,
+			repoLink: 'https://github.com/HenriqueFadoni/npm-library',
+			webLink: 'https://www.npmjs.com/package/employ-fadoni-now'
+		},
+		{ 
+			name: 'Cocktail Finder',
+			tag: 'React Native',
+			image: project1,
+			repoLink: 'https://github.com/HenriqueFadoni/CocktailFinder-Interview',
+			webLink: false
+		},
+		{ 
+			name: 'Burguer Builder',
+			tag: 'React',
+			image: project5,
+			repoLink: 'https://github.com/HenriqueFadoni/the-burguer-builder',
+			webLink: 'https://react-my-burger-fadoni.firebaseapp.com/'
+		},
+		{ 
+			name: 'DashBoard',
+			tag: 'React',
+			image: project1, 
+			repoLink: 'https://github.com/HenriqueFadoni/dashboard',
+			webLink: false
+		}
 	]
 
 	return (

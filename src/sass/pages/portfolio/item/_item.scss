@@ -93,5 +93,13 @@
     align-items: center;
 
     z-index: 2;
+
+    & a {
+      transition: transform .2s ease-in;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
   }
 }

@@ -9,7 +9,9 @@ const ProjectList = props => {
       key={`${i}-${project.name}`}
       name={project.name}
       tag={project.tag}
+      image={project.image}
       repoLink={project.repoLink}
+      webLink={project.webLink}
     />
   ))
 

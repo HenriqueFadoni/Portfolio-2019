@@ -3,6 +3,13 @@ import React, { useState } from 'react'
 import Options from './Options/Options'
 
 const Project = props => {
+	const { 
+		name, 
+		tag, 
+		image, 
+		repoLink, 
+		webLink 
+	} = props
 	const [show, setShow] = useState(false);
 
 	const onHover = () => setShow(true)
@@ -17,16 +24,16 @@ const Project = props => {
 			>
 				{
 					show
-						? <Options />
+						? <Options repo={repoLink} web={webLink} />
 						: null
 				}
-				<img src={props.repoLink} alt="Project Image" />
+				<img src={image} alt="Project Image" />
 			</div>
 			<div className="portfolio__pinned--item-text">
-				<h4>{props.name}</h4>
+				<h4>{name}</h4>
 				<div className="portfolio__pinned--item-tag">
 					<div className="portfolio__pinned--item-dot">&nbsp;</div>
-					<h4>{props.tag}</h4>
+					<h4>{tag}</h4>
 				</div>
 			</div>
 		</div>
