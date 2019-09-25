@@ -6,8 +6,20 @@ import project1 from '../../../assets/images/project-1.png'
 
 const Pinned = () => {
 	const projects = [
-		{ name: 'PathFinder', tag: 'React', repoLink: project1 },
-		{ name: 'PathFinder', tag: 'React', repoLink: project1 },
+		{
+			name: 'PathFinder',
+			tag: 'React',
+			image: project1,
+			repoLink: 'https://github.com/HenriqueFadoni/npm-library',
+			webLink: 'https://www.npmjs.com/package/employ-fadoni-now'
+		},
+		{
+			name: 'PathFinder',
+			tag: 'React',
+			image: project1,
+			repoLink: 'https://github.com/HenriqueFadoni/npm-library',
+			webLink: 'https://www.npmjs.com/package/employ-fadoni-now'
+		},
 	] // Max number of Pinned Projects is 5
 
 	return (
