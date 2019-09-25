@@ -7,8 +7,8 @@ const Subject = props => {
 			key={`${i}-${item}`}
 			className={
 				props.isActive
-					? "about-subjects__item"
-					: "about-subjects__item--hidden"
+					? 'about-subjects__item'
+					: 'about-subjects__item--hidden'
 			}
 		>
 			<h3>{item}</h3>
@@ -29,7 +29,7 @@ const Subject = props => {
 
 export default Subject
 
-Subject.prototype = {
+Subject.prototypes = {
 	title: PropTypes.string.isRequired,
 	list: PropTypes.arrayOf(PropTypes.string).isRequired
 }

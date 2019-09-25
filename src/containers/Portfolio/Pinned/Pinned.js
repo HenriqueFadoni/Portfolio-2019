@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 import Title from './Title/Title'
 import ProjectList from '../ProjectList/ProjectList'
@@ -19,7 +19,7 @@ const Pinned = () => {
 			image: project1,
 			repoLink: 'https://github.com/HenriqueFadoni/npm-library',
 			webLink: 'https://www.npmjs.com/package/employ-fadoni-now'
-		},
+		}
 	] // Max number of Pinned Projects is 5
 
 	return (

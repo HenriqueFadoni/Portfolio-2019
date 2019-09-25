@@ -64,7 +64,7 @@ const Subjects = () => {
 	}
 
 	useEffect(() => {
-		window.addEventListener('scroll', scrollHandler);
+		window.addEventListener('scroll', scrollHandler)
 		return () => window.removeEventListener('scroll', scrollHandler)
 	})
 

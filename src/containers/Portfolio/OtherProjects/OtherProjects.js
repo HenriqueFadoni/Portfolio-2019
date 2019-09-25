@@ -27,7 +27,7 @@ const OtherProjects = () => {
 		{ 
 			name: 'NPM Library',
 			tag: 'React',
-			image: project4 ,
+			image: project4,
 			repoLink: 'https://github.com/HenriqueFadoni/npm-library',
 			webLink: 'https://www.npmjs.com/package/employ-fadoni-now'
 		},
