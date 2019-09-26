@@ -15,17 +15,20 @@
 @import "./components/footer";
 
 // Pages
-// Home
+  // Home
 @import "./pages/home";
 
-// About
+  // About
 @import "./pages/about/about";
 @import "./pages/about/header/header";
 @import "./pages/about/skills/skills";
 @import "./pages/about/steps/steps";
 @import "./pages/about/subjects/subjects";
+  
+  //Contact
+@import "./pages/contact/contact";
 
-//Portfolio
+  //Portfolio
 @import "./pages/portfolio/portfolio";
 @import "./pages/portfolio/item/item";
 @import "./pages/portfolio/overall/overall";

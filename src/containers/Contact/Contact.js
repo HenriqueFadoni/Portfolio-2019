@@ -1,11 +1,11 @@
 import React from 'react'
 
-import TopMenu from './TopMenu/TopMenu'
+import Header from './Header/Header'
 
 const Contact = () => {
 	return (
-		<div>
-			<TopMenu />
+		<div className="contact__container">
+			<Header />
 			<div>
 				Contact
 			</div>
