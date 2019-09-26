@@ -1,12 +1,11 @@
 .contact {
 	&__container {
-		height: auto;
-		min-height: 100vh;
+		height: 100vh;
 		width: 100vw;
 
 		display: grid;
 		grid-template-columns: 1fr;
-    grid-template-rows: 10rem 40rem;
+    grid-template-rows: 10rem 30rem;
 	}
 
 	&__header {
@@ -23,5 +22,5 @@
       font-size: 4rem;
       color: $color-white;
 		}
-	}
+  }
 }

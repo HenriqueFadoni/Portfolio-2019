@@ -1,13 +1,14 @@
 import React from 'react'
 
 import Header from './Header/Header'
-import GoogleMap from './Map/Map'
+import MapWrapper from './MapWrapper/MapWrapper'
 
 const Contact = () => {
 	return (
 		<div className="contact__container">
 			<Header />
-			<GoogleMap />
+			<MapWrapper />
+			<h1>A</h1>
 		</div>
 	)
 }
