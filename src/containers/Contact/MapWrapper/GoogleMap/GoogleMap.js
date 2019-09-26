@@ -5,7 +5,7 @@ import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
 const GoogleMap = props => (
   <Map
     google={props.google}
-    zoom={14}
+    zoom={5}
     initialCenter={{
       lat: -22.234171,
       lng: -45.933201
