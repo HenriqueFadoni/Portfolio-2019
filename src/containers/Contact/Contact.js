@@ -2,13 +2,16 @@ import React from 'react'
 
 import Header from './Header/Header'
 import MapWrapper from './MapWrapper/MapWrapper'
+import Content from './Content/Content'
+import Footer from '../../components/Footer/Footer'
 
 const Contact = () => {
 	return (
 		<div className="contact__container">
 			<Header />
 			<MapWrapper />
-			<h1>A</h1>
+			<Content />
+			<Footer />
 		</div>
 	)
 }
