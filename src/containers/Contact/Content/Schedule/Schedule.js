@@ -1,13 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faCalendarAlt
-} from '@fortawesome/free-solid-svg-icons'
+import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons'
 
 const Schedule = () => {
+  const [isHover, setIsHover] = useState(false)
+
+  const onHoverHandler = () => setIsHover(!isHover)
+
   return (
-    <div className="contact__content--schedule">
+    <div
+      className="contact__content--schedule"
+      onMouseOver={onHoverHandler}
+      onMouseOut={onHoverHandler}
+    >
       <a
+        className={isHover ? null : "calendar-bounce"}
         href="https://calendly.com/henriquefadoni"
         target="_blank"
         rel="noopener noreferrer"
