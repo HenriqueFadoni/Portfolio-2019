@@ -6,8 +6,8 @@ import Email from './Email/Email'
 const Content = () => {
 	return (
 		<div className="contact__content--container">
-      <Email />
-      <Schedule />
+			<Email />
+			<Schedule />
 		</div>
 	)
 }

@@ -18,7 +18,7 @@ const Schedule = () => {
 			onClick={clickHandle}
 		>
 			<a
-				className={isHover ? null : "calendar-bounce"}
+				className={isHover ? null : 'calendar-bounce'}
 				href="https://calendly.com/henriquefadoni"
 				target="_blank"
 				rel="noopener noreferrer"
