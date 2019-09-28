@@ -4,7 +4,7 @@ import Title from './Title/Title'
 import Icons from './Icons/Icons'
 
 const Footer = () => (
-	<footer className="footer__container">
+	<footer className="footer__container contact--footer">
 		<Title />
 		<Icons />
 	</footer>

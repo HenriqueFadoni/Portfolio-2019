@@ -1,11 +1,12 @@
 .contact {
 	&__container {
-		height: 100vh;
+    min-height: 100vh;
+		height: auto;
 		width: 100vw;
 
 		display: grid;
-		grid-template-columns: 1fr;
-    grid-template-rows: 10rem 30rem;
+		grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
 	}
 
 	&__header {
@@ -26,8 +27,8 @@
 
   &__content {
     &--container {
-      height: 42.7vh;
-      width: 100vw;
+      height: auto;
+      width: 50vw;
       padding: 1rem;
 
       display: grid;
@@ -63,5 +64,10 @@
     &--email:hover {
       background-color: $color-tertiary;
     }
+  }
+
+  &--footer {
+    grid-column-start: 1;
+    grid-column-end: -1;
   }
 }
