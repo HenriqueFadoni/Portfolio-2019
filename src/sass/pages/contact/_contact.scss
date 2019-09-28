@@ -9,22 +9,6 @@
 		grid-template-rows: auto;
 	}
 
-	&__header {
-		height: 10rem;
-		width: 100%;
-		background-color: $color-primary-lighten;
-
-		display: flex;
-		align-items: center;
-		padding: 2rem;
-
-		& h1 {
-			font-family: "Courgette", cursive;
-			font-size: 4rem;
-			color: $color-white;
-		}
-	}
-
 	&__content {
 		&--container {
 			height: auto;
@@ -32,8 +16,7 @@
 
 			display: grid;
 			grid-template-columns: 1fr;
-			grid-template-rows: auto;
-			grid-column-gap: 10rem;
+			grid-template-rows: 1fr 1fr;
 
 			justify-content: center;
 			background-color: $color-primary;
@@ -43,9 +26,6 @@
 		&--schedule {
 			display: flex;
 			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-
 			color: $color-white;
 
 			& h1 {
@@ -56,11 +36,31 @@
 
 		&--schedule {
 			cursor: pointer;
+			justify-content: center;
+			align-items: center;
 			background-color: $color-secondary;
 			transition: all 0.7s ease-in;
 
 			&:hover {
 				background-color: $color-tertiary;
+			}
+		}
+
+		&--email {
+			font-family: "Nunito", cursive;
+			padding: 1rem;
+
+			& h1 {
+				font-size: 4rem;
+				font-weight: 300;
+				margin: 3rem;
+			}
+
+			& h3 {
+				font-size: 2rem;
+				font-weight: 300;
+
+				margin-left: 3rem;
 			}
 		}
 	}
@@ -69,4 +69,11 @@
 		grid-column-start: 1;
 		grid-column-end: -1;
 	}
+}
+
+.info {
+  &--email {
+    color: $color-secondary;
+    margin-bottom: 1rem;
+  }
 }
