@@ -33,12 +33,13 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, 40.5rem);
       grid-template-rows: 1fr;
-      grid-column-gap: 1rem;
+      grid-column-gap: 10rem;
 
       justify-content: center;
       background-color: $color-primary;
     }
 
+    &--email,
     &--schedule {
       display: flex;
       flex-direction: column;
@@ -49,15 +50,18 @@
 
       color: $color-white;
 
-      &:hover {
-        background-color: orangered;
-      }
-
       & h1 {
         font-family: 'Nunito', cursive;
         margin-top: 3rem;
-
       }
+    }
+
+    &--schedule:hover {
+      background-color: $color-secondary;
+    }
+
+    &--email:hover {
+      background-color: $color-tertiary;
     }
   }
 }

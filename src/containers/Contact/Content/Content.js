@@ -1,11 +1,12 @@
 import React from 'react'
 
 import Schedule from './Schedule/Schedule'
+import Email from './Email/Email'
 
 const Content = () => {
 	return (
 		<div className="contact__content--container">
-      <div>A</div>
+      <Email />
       <Schedule />
 		</div>
 	)

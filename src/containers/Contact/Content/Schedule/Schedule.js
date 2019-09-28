@@ -4,7 +4,7 @@ import {
   faCalendarAlt
 } from '@fortawesome/free-solid-svg-icons'
 
-const Content = () => {
+const Schedule = () => {
   return (
     <div className="contact__content--schedule">
       <a
@@ -18,9 +18,9 @@ const Content = () => {
           icon={faCalendarAlt}
         />
       </a>
-      <h1>Schedule an Interview</h1>
+      <h1>Schedule an Interview Now!</h1>
     </div>
   )
 }
 
-export default Content
+export default Schedule

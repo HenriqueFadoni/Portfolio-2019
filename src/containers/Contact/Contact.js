@@ -8,7 +8,6 @@ import Footer from '../../components/Footer/Footer'
 const Contact = () => {
 	return (
 		<div className="contact__container">
-			<Header />
 			<MapWrapper />
 			<Content />
 			<Footer />
