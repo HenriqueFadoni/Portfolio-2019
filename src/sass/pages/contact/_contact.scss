@@ -1,12 +1,12 @@
 .contact {
 	&__container {
-    min-height: 100vh;
+		min-height: 100vh;
 		height: auto;
 		width: 100vw;
 
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
+		grid-template-rows: auto;
 	}
 
 	&__header {
@@ -19,55 +19,54 @@
 		padding: 2rem;
 
 		& h1 {
-      font-family: 'Courgette', cursive;
-      font-size: 4rem;
-      color: $color-white;
+			font-family: "Courgette", cursive;
+			font-size: 4rem;
+			color: $color-white;
 		}
-  }
+	}
 
-  &__content {
-    &--container {
-      height: auto;
-      width: 50vw;
-      padding: 1rem;
+	&__content {
+		&--container {
+			height: auto;
+			width: 50vw;
 
-      display: grid;
-      grid-template-columns: repeat(auto-fit, 40.5rem);
-      grid-template-rows: 1fr;
-      grid-column-gap: 10rem;
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: auto;
+			grid-column-gap: 10rem;
 
-      justify-content: center;
-      background-color: $color-primary;
-    }
+			justify-content: center;
+			background-color: $color-primary;
+		}
 
-    &--email,
-    &--schedule {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      transition: all .2s ease-in;
-      cursor: pointer;
+		&--email,
+		&--schedule {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 
-      color: $color-white;
+			color: $color-white;
 
-      & h1 {
-        font-family: 'Nunito', cursive;
-        margin-top: 3rem;
-      }
-    }
+			& h1 {
+				font-family: "Nunito", cursive;
+				margin-top: 3rem;
+			}
+		}
 
-    &--schedule:hover {
-      background-color: $color-secondary;
-    }
+		&--schedule {
+			cursor: pointer;
+			background-color: $color-secondary;
+			transition: all .7s ease-in;
 
-    &--email:hover {
-      background-color: $color-tertiary;
-    }
-  }
+			&:hover {
+				background-color: $color-tertiary;
+			}
+		}
+	}
 
-  &--footer {
-    grid-column-start: 1;
-    grid-column-end: -1;
-  }
+	&--footer {
+		grid-column-start: 1;
+		grid-column-end: -1;
+	}
 }
