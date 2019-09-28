@@ -4,9 +4,8 @@ import GoogleMap from './GoogleMap/GoogleMap'
 
 const MapWrapper = () => (
   <div style={{
-    height: '300px',
-    weight: '100%',
-    marginTop: '100px',
+    height: '100vh',
+    width: '50%',
     position: 'relative',
     marginTop: 'none',
     marginBottom: 'none',

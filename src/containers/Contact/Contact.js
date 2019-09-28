@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Header from './Header/Header'
 import MapWrapper from './MapWrapper/MapWrapper'
 import Content from './Content/Content'
 import Footer from '../../components/Footer/Footer'
