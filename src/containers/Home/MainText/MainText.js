@@ -1,6 +1,6 @@
 import React from 'react'
 
-import SubTitle from './SubTitle/SubTitle'
+import SubTitle from './Subtitle/Subtitle'
 import Title from './Title/Title'
 
 const Text = () => (

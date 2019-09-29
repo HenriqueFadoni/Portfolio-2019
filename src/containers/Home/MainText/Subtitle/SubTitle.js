@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SubTitle = () => (
+const Subtitle = () => (
 	<div className="home__text--subtitle-container">
 		<h1 className="subtitle--pacifico color--white">
 			Not Another Random Software Developer.
@@ -8,4 +8,4 @@ const SubTitle = () => (
 	</div>
 )
 
-export default SubTitle
+export default Subtitle
