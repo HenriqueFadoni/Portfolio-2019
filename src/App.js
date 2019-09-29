@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, lazy, Suspense } from 'react'
 import {
 	Route,
 	Switch
@@ -6,12 +6,14 @@ import {
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
 import './sass/main.scss'
-
 import Menu from './containers/Menu/Menu'
-import Home from './containers/Home/Home'
-import About from './containers/About/About'
-import Contact from './containers/Contact/Contact'
-import Portfolio from './containers/Portfolio/Portfolio'
+import ErrorScreen from './containers/ErrorScreen/ErrorScreen'
+
+const Home = lazy(() => import('./containers/Home/Home'))
+const About = lazy(() => import('./containers/About/About'))
+const Portfolio = lazy(() => import('./containers/Portfolio/Portfolio'))
+const Contact = lazy(() => import('./containers/Contact/Contact'))
+
 
 const App = () => {
 
@@ -45,9 +47,11 @@ const App = () => {
 						timeout={300}
 						classNames="fade"
 					>
-						<Switch location={location}>
-							{routers}
-						</Switch>
+						<Suspense fallback={<ErrorScreen />}>
+							<Switch location={location}>
+								{routers}
+							</Switch>
+						</Suspense>
 					</CSSTransition>
 				</TransitionGroup>
 			)} />
