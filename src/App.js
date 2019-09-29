@@ -1,7 +1,8 @@
 import React, { lazy, Suspense } from 'react'
 import {
 	Route,
-	Switch
+	Switch,
+	Redirect
 } from 'react-router-dom'
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
@@ -22,27 +23,26 @@ const App = () => {
 			<Route path="/about" component={About} />
 			<Route path="/contact" component={Contact} />
 			<Route path="/portfolio" component={Portfolio} />
+			<Redirect to="/" />
 		</>
 	)
 
 	return (
 		<div className="App">
 			<Menu />
-			<Route render={({ location }) => (
-				<TransitionGroup>
-					<CSSTransition
-						key={location.key}
-						timeout={300}
-						classNames="fade"
-					>
-						<Suspense fallback={<LoadScreen />}>
-							<Switch location={location}>
-								{routers}
-							</Switch>
-						</Suspense>
-					</CSSTransition>
-				</TransitionGroup>
-			)} />
+			<TransitionGroup>
+				<CSSTransition
+					key={window.location.key}
+					timeout={300}
+					classNames="fade"
+				>
+					<Suspense fallback={<LoadScreen />}>
+						<Switch location={window.location}>
+							{routers}
+						</Switch>
+					</Suspense>
+				</CSSTransition>
+			</TransitionGroup>
 		</div>
 	)
 }
