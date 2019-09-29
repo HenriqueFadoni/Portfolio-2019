@@ -1,4 +1,4 @@
-import React, { useEffect, lazy, Suspense } from 'react'
+import React, { lazy, Suspense } from 'react'
 import {
 	Route,
 	Switch
@@ -16,17 +16,6 @@ const Contact = lazy(() => import('./containers/Contact/Contact'))
 
 
 const App = () => {
-	const scrollHandler = () => {
-		// if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-			
-		// }
-	}
-
-	useEffect(() => {
-		window.addEventListener('scroll', scrollHandler)
-		return () => window.removeEventListener('scroll', scrollHandler)
-	})
-
 	const routers = (
 		<>
 			<Route path="/" component={Home} exact />
