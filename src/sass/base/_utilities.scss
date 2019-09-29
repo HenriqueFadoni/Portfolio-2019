@@ -17,3 +17,22 @@
 .margin__right--3 {
     margin-right: 3rem;
 }
+
+// Route Animation
+.left {
+    &.page-enter {
+      animation: slideInLeft .2s forwards;
+    }
+    &.page-exit {
+      animation: slideOutLeft .2s forwards;
+    }
+  }
+  
+  .right {
+    &.page-enter {
+      animation: slideInRight .2s forwards;
+    }
+    &.page-exit {
+      animation: slideOutRight .2s forwards;
+    }
+  }

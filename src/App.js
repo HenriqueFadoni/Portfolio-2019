@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import {
 	Route,
 	Switch
@@ -26,21 +26,28 @@ const App = () => {
 	return (
 		<div className="App">
 			<Menu />
-			<Route render={({ location }) => (
-				<TransitionGroup>
-					<CSSTransition
-						key={location.key}
-						classNames="fade"
-						timeout={500}
-					>
-						<Switch location={location}>
-							{routers}
-						</Switch>
-					</CSSTransition>
-				</TransitionGroup>
-			)} />
+			<Route render={({ location }) => {
+				const { key } = location;
+				const timeout = { enter: 200, exit: 200 };
+
+				return (
+					<TransitionGroup component={null}>
+						<CSSTransition
+							key={key}
+							timeout={timeout}
+							classNames="page"
+							mountOnEnter={false}
+							unmountOnExit={true}
+						>
+							<Switch location={location}>
+								{routers}
+							</Switch>
+						</CSSTransition>
+					</TransitionGroup>
+				)
+			}} />
 		</div>
 	)
 }
 
-export default App
+export default React.memo(App)
