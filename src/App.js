@@ -7,7 +7,7 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
 import './sass/main.scss'
 import Menu from './containers/Menu/Menu'
-import ErrorScreen from './containers/ErrorScreen/ErrorScreen'
+import LoadScreen from './containers/LoadScreen/LoadScreen'
 
 const Home = lazy(() => import('./containers/Home/Home'))
 const About = lazy(() => import('./containers/About/About'))
@@ -16,11 +16,10 @@ const Contact = lazy(() => import('./containers/Contact/Contact'))
 
 
 const App = () => {
-
 	const scrollHandler = () => {
-		// if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-		// 	console.log('btn')
-		// }
+		if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+			console.log('btn')
+		}
 	}
 
 	useEffect(() => {
@@ -47,7 +46,7 @@ const App = () => {
 						timeout={300}
 						classNames="fade"
 					>
-						<Suspense fallback={<ErrorScreen />}>
+						<Suspense fallback={<LoadScreen />}>
 							<Switch location={location}>
 								{routers}
 							</Switch>
