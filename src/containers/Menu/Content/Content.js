@@ -19,7 +19,7 @@ const Content = props => {
 			title: 'PORTFOLIO'
 		},
 		{
-			to: 'https://drive.google.com/file/d/1QDj5qjCMVyWiGUe63Jp9K4I6lXv4A97j/view?usp=sharing',
+			to: 'https://drive.google.com/file/d/16R8eLmjIEAC6k4CUSAZxrJ0ikb6M1RzG/view',
 			title: 'RESUME'
 		},
 		{

@@ -15,7 +15,6 @@ const About = lazy(() => import('./containers/About/About'))
 const Portfolio = lazy(() => import('./containers/Portfolio/Portfolio'))
 const Contact = lazy(() => import('./containers/Contact/Contact'))
 
-
 const App = () => {
 	const routers = (
 		<>
