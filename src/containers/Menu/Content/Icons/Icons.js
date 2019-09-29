@@ -15,11 +15,14 @@ const Icons = props => {
 	])
 
 	return (
-		<div className={
-			props.isButtonAct
-				? 'menu__icons--active'
-				: 'menu__icons'
-		}>
+		<div
+			className={
+				props.isButtonAct
+					? 'menu__icons--active'
+					: 'menu__icons'
+			}
+			onClick={props.clickHandler}
+		>
 			{
 				iconList.map((icon, index) => (
 					<a

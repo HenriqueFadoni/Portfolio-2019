@@ -16,7 +16,11 @@ const Items = props => {
 		}
 
 		return (
-			<li className="menu__item" key={index}>
+			<li 
+				className="menu__item" 
+				key={index}
+				onClick={props.clickHandler}
+			>
 				{render}
 			</li>
 		)

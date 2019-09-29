@@ -16,7 +16,10 @@ const Menu = () => {
 				isButtonAct={isButtonAct}
 				clickHandler={clickHandler}
 			/>
-			<Content isButtonAct={isButtonAct} />
+			<Content 
+				isButtonAct={isButtonAct} 
+				clickHandler={clickHandler}
+			/>
 			<Background isButtonAct={isButtonAct} />
 		</div>
 	)

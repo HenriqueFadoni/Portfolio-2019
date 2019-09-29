@@ -34,8 +34,15 @@ const Content = props => {
 				? 'menu__nav--container--active'
 				: 'menu__nav--container'
 		}>
-			<Items isButtonAct={props.isButtonAct} routes={routes} />
-			<Icons isButtonAct={props.isButtonAct} />
+			<Items 
+				isButtonAct={props.isButtonAct} 
+				clickHandler={props.clickHandler}
+				routes={routes} 
+			/>
+			<Icons 
+				clickHandler={props.clickHandler}
+				isButtonAct={props.isButtonAct} 
+			/>
 		</nav>
 	)
 }
