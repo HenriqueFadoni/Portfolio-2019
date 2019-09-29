@@ -1,8 +1,8 @@
 import React from 'react'
 
 const LoadScreen = () => (
-	<div className="error__container">
-		<div>Loading...</div>
+	<div className="load__container">
+		<h1>Loading...</h1>
 	</div>
 )
 

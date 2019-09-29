@@ -17,9 +17,9 @@ const Contact = lazy(() => import('./containers/Contact/Contact'))
 
 const App = () => {
 	const scrollHandler = () => {
-		if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-			console.log('btn')
-		}
+		// if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+			
+		// }
 	}
 
 	useEffect(() => {
