@@ -35,5 +35,8 @@ Project.propTypes = {
 	tag: PropTypes.string.isRequired,
 	image: PropTypes.node.isRequired,
 	repoLink: PropTypes.string.isRequired,
-	webLink: PropTypes.string.isRequired
+	webLink: PropTypes.oneOfType([
+		PropTypes.string,
+		PropTypes.bool
+	]).isRequired
 }

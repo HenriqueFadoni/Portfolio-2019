@@ -50,5 +50,6 @@ const Content = props => {
 export default Content
 
 Content.propTypes = {
+	clickHandler: PropTypes.func.isRequired,
 	isButtonAct: PropTypes.bool.isRequired
 }

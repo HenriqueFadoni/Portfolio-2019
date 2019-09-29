@@ -40,6 +40,7 @@ const Items = props => {
 export default Items
 
 Items.propTypes = {
+	clickHandler: PropTypes.func.isRequired,
 	isButtonAct: PropTypes.bool.isRequired,
 	routes: PropTypes.arrayOf(PropTypes.shape({
 		to: PropTypes.string,

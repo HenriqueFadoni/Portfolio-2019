@@ -25,7 +25,7 @@ const Image = props => {
 					? <Options repo={repoLink} web={webLink} />
 					: null
 			}
-			<img src={image} alt="Project Image" />
+			<img src={image} alt="Project" />
 		</div>
 	)
 }

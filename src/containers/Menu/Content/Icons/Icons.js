@@ -47,5 +47,6 @@ const Icons = props => {
 export default Icons
 
 Icons.propTypes = {
+	clickHandler: PropTypes.func.isRequired,
 	isButtonAct: PropTypes.bool.isRequired
 }
