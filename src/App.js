@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import {
 	Route,
 	Switch
@@ -14,6 +14,18 @@ import Contact from './containers/Contact/Contact'
 import Portfolio from './containers/Portfolio/Portfolio'
 
 const App = () => {
+
+	const scrollHandler = () => {
+		// if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+		// 	console.log('btn')
+		// }
+	}
+
+	useEffect(() => {
+		window.addEventListener('scroll', scrollHandler)
+		return () => window.removeEventListener('scroll', scrollHandler)
+	})
+
 	const routers = (
 		<>
 			<Route path="/" component={Home} exact />
@@ -27,21 +39,20 @@ const App = () => {
 		<div className="App">
 			<Menu />
 			<Route render={({ location }) => (
-					<TransitionGroup>
-						<CSSTransition
-							key={location.key}
-							timeout={300}
-							classNames="fade"
-						>
-							<Switch location={location}>
-								{routers}
-							</Switch>
-						</CSSTransition>
-					</TransitionGroup>
-				)
-			} />
+				<TransitionGroup>
+					<CSSTransition
+						key={location.key}
+						timeout={300}
+						classNames="fade"
+					>
+						<Switch location={location}>
+							{routers}
+						</Switch>
+					</CSSTransition>
+				</TransitionGroup>
+			)} />
 		</div>
 	)
 }
 
-export default React.memo(App)
+export default App
