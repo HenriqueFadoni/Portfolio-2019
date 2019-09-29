@@ -16,7 +16,7 @@ const Home = () => {
 	}, [])
 
 	return (
-		<div className="home__container right">
+		<div className="home__container">
 			{
 				screenWidth > 500
 					? <VideoBackground />

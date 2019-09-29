@@ -6,7 +6,7 @@ import Footer from '../../components/Footer/Footer'
 
 const Contact = () => {
 	return (
-		<div className="contact__container left">
+		<div className="contact__container">
 			<MapWrapper />
 			<Content />
 			<Footer />

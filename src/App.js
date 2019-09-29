@@ -26,18 +26,12 @@ const App = () => {
 	return (
 		<div className="App">
 			<Menu />
-			<Route render={({ location }) => {
-				const { key } = location;
-				const timeout = { enter: 200, exit: 200 };
-
-				return (
-					<TransitionGroup component={null}>
+			<Route render={({ location }) => (
+					<TransitionGroup>
 						<CSSTransition
-							key={key}
-							timeout={timeout}
-							classNames="page"
-							mountOnEnter={false}
-							unmountOnExit={true}
+							key={location.key}
+							timeout={300}
+							classNames="fade"
 						>
 							<Switch location={location}>
 								{routers}
@@ -45,7 +39,7 @@ const App = () => {
 						</CSSTransition>
 					</TransitionGroup>
 				)
-			}} />
+			} />
 		</div>
 	)
 }

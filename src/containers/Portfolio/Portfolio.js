@@ -6,7 +6,7 @@ import Footer from '../../components/Footer/Footer'
 
 const Portfolio = () => {
 	return (
-		<div className="portfolio__container right">
+		<div className="portfolio__container">
 			<Pinned />
 			<OtherProjects />
 			<Footer />
