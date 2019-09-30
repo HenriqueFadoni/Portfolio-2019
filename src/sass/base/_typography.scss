@@ -1,11 +1,18 @@
 .title--courgettee {
-    // font-family: 'Pacifico', cursive;
-    font-family: 'Courgette', cursive;
-    font-size: 8rem;
+  font-family: "Courgette", cursive;
+  font-size: 8rem;
+
+  @include respond(tab-port) {
+    font-size: 9rem;
+  }
+
+  @include respond(phone) {
+    font-size: 8.5rem;
+  }
 }
 
 .subtitle--pacifico {
-    font-family: 'Nunito', cursive;
-    font-weight: 300;
-    font-size: 4rem;
+  font-family: "Nunito", cursive;
+  font-weight: 300;
+  font-size: 4rem;
 }

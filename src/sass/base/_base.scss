@@ -11,6 +11,10 @@ html {
     scroll-behavior: smooth;
     overflow-y: scroll;
 
+    @include respond(big-desktop) {
+        font-size: 75%; // 1rem = 9px
+    }
+
     @include respond(tab-land) {
         font-size: 56.25%; // 1rem = 9px
     }

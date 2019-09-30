@@ -19,7 +19,7 @@
     }
 
     @include respond(tab-port) {
-      transform: scale(0.6);
+      transform: scale(0.8);
     }
   }
 
@@ -52,11 +52,11 @@
     overflow: hidden;
 
     @include respond(tab-land) {
-      width: 22vw;
+      width: 25vw;
     }
 
     @include respond(tab-port) {
-      width: 25vw;
+      width: 30vw;
     }
 
     @include respond(phone) {
@@ -94,11 +94,11 @@
     transition: all 0.3s 0.3s cubic-bezier(0.86, 0, 0.07, 1);
 
     @include respond(tab-land) {
-      width: 22vw;
+      width: 25vw;
     }
 
     @include respond(tab-port) {
-      width: 25vw;
+      width: 30vw;
     }
 
     @include respond(phone) {
@@ -122,6 +122,14 @@
 
     list-style: none;
     text-align: center;
+
+    @include respond(tab-land) {
+      padding-top: 15rem;
+    }
+
+    @include respond(tab-port) {
+      padding-top: 17rem;
+    }
 
     @include respond(phone) {
       padding-top: 0;
@@ -157,12 +165,8 @@
       background-size: 240%;
       transition: all 0.3s;
 
-      @include respond(tab-land) {
-        font-size: 2.5rem;
-      }
-
       @include respond(tab-port) {
-        font-size: 3rem;
+        font-size: 3.4rem;
       }
 
       @include respond(phone) {
@@ -185,6 +189,10 @@
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 2rem;
+
+    @include respond(phone) {
+      font-size: 1.4rem;
+    }
   }
 
   &__icons {

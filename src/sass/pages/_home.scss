@@ -56,10 +56,22 @@
         typing 2s steps(40, end), 
         blink .5s step-end infinite;
       white-space: nowrap;
-      font-size: 30px;
-      font-weight: 700;
+      font-size: 3rem;
+      font-weight: 300;
       border-right: 4px solid black;
       box-sizing: border-box;
+
+      @include respond(big-desktop) {
+        font-size: 4rem;
+      }
+
+      @include respond(tab-port) {
+        font-size: 3.5rem;
+      }
+
+      @include respond(phone) {
+        font-size: 3rem;
+      }
     }
   }
 }
