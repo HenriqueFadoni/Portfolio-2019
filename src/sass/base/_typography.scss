@@ -6,8 +6,12 @@
     font-size: 9rem;
   }
 
-  @include respond(phone) {
+  @include respond(large-phone) {
     font-size: 8.5rem;
+  }
+
+  @include respond(small-phone) {
+    font-size: 4.5rem;
   }
 }
 

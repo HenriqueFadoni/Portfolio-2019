@@ -59,7 +59,7 @@
       width: 30vw;
     }
 
-    @include respond(phone) {
+    @include respond(large-phone) {
       width: 100vw;
     }
   }
@@ -101,7 +101,7 @@
       width: 30vw;
     }
 
-    @include respond(phone) {
+    @include respond(large-phone) {
       width: 100vw;
       grid-template-rows: 1fr 10rem;
     }
@@ -131,7 +131,7 @@
       padding-top: 17rem;
     }
 
-    @include respond(phone) {
+    @include respond(large-phone) {
       padding-top: 0;
       grid-row-gap: 2rem;
       align-content: center;
@@ -169,7 +169,7 @@
         font-size: 3.4rem;
       }
 
-      @include respond(phone) {
+      @include respond(large-phone) {
         font-size: 3.7rem;
       }
     }
@@ -190,7 +190,7 @@
     align-items: flex-end;
     margin-bottom: 2rem;
 
-    @include respond(phone) {
+    @include respond(large-phone) {
       font-size: 1.4rem;
     }
   }

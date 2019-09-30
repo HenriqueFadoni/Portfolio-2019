@@ -4,7 +4,8 @@
 
 // MEDIA QUERY MANAGER
 
-// 0 - 800px: PHONE
+// 0 - 500px: SMALL PHONE
+// 500 - 800px: LARGE PHONE
 // 800 - 1000px: TABLET PORTRAIT
 // 1000 - 1200px: TABLET LANDSCAPE
 // [1200 - 1800] is where our normal style apply
@@ -19,7 +20,10 @@
 // Order: Base + Typography > general layout + grid > page layout > components
 
 @mixin respond($breakpoint) {
-  @if $breakpoint == phone {
+  @if $breakpoint == small-phone {
+    @media only screen and (max-width: 31.25em) { @content }; // 500px
+  }
+  @if $breakpoint == large-phone {
     @media only screen and (max-width: 50em) { @content }; // 800px
   }
   @if $breakpoint == tab-port {
