@@ -13,6 +13,14 @@
     position: fixed;
     text-align: center;
     z-index: 15;
+
+    @include respond(tab-land) {
+      transform: scale(0.7);
+    }
+
+    @include respond(tab-port) {
+      transform: scale(0.6);
+    }
   }
 
   &__container button:focus {
@@ -40,8 +48,20 @@
     right: 0;
     height: 100vh;
     width: 20vw;
-    box-shadow: -1px 0px 10px 1px rgba($color-primary, .6);
+    box-shadow: -1px 0px 10px 1px rgba($color-primary, 0.6);
     overflow: hidden;
+
+    @include respond(tab-land) {
+      width: 22vw;
+    }
+
+    @include respond(tab-port) {
+      width: 25vw;
+    }
+
+    @include respond(phone) {
+      width: 100vw;
+    }
   }
 
   // Navigation
@@ -72,6 +92,19 @@
     justify-content: center;
 
     transition: all 0.3s 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+
+    @include respond(tab-land) {
+      width: 22vw;
+    }
+
+    @include respond(tab-port) {
+      width: 25vw;
+    }
+
+    @include respond(phone) {
+      width: 100vw;
+      grid-template-rows: 1fr 10rem;
+    }
   }
 
   // List
@@ -89,6 +122,12 @@
 
     list-style: none;
     text-align: center;
+
+    @include respond(phone) {
+      padding-top: 0;
+      grid-row-gap: 2rem;
+      align-content: center;
+    }
   }
 
   &__list {
@@ -117,6 +156,18 @@
       background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
       background-size: 240%;
       transition: all 0.3s;
+
+      @include respond(tab-land) {
+        font-size: 2.5rem;
+      }
+
+      @include respond(tab-port) {
+        font-size: 3rem;
+      }
+
+      @include respond(phone) {
+        font-size: 3.7rem;
+      }
     }
 
     &:hover,
