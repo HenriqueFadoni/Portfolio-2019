@@ -16,28 +16,44 @@
 
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 30rem auto;
+        grid-template-rows: 37rem auto;
         row-gap: 2rem;
         justify-content: center;
         align-content: center;
+
+        @include respond(tab-land) {
+          grid-template-rows: 40rem auto;
+        }
+
+        @include respond(tab-port) {
+          grid-template-rows: 45rem auto;
+        }
       }
 
       &--text {
         height: 100%;
         width: 100%;
-        padding: 0 10rem;
+        padding: 0 8rem;
         animation: appear 0.5s ease-in;
 
         & h1 {
           font-family: "Courgette", cursive;
           font-size: 4rem;
           margin-bottom: 3rem;
+
+          @include respond(tab-land) {
+            font-size: 3.3rem;
+          }
         }
 
         & p {
           font-family: "Nunito", cursive;
           font-size: 1.7rem;
           text-align: justify;
+        }
+
+        @include respond(tab-port) {
+          padding: 0 7rem;
         }
       }
     }
