@@ -33,5 +33,10 @@
     & span {
       color: $color-secondary;
     }
+
+    @include respond(small-phone) {
+      margin: 0;
+      padding: 2rem;
+    }
   }
 }

@@ -18,7 +18,16 @@
       flex-direction: row;
       justify-content: center;
       align-items: center;
+      position: relative;
       background-color: $color-tertiary;
+
+      @include respond(large-phone) {
+        height: 25rem;
+      }
+
+      @include respond(small-phone) {
+        display: none;
+      }
 
       & h1 {
         font-family: "Nunito", cursive;
@@ -28,12 +37,28 @@
 
       & h1:not(:last-child) {
         margin-right: 1rem;
+
+        @include respond(large-phone) {
+          margin-right: 0;
+        }
       }
     }
 
     &--text {
       overflow: hidden;
       height: 4rem;
+
+      @include respond(large-phone) {
+        margin-bottom: 3rem;
+      }
+    }
+
+    &--listc {
+      @include respond(large-phone) {
+        position: absolute;
+        overflow: hidden;
+        height: 4rem;
+      }
     }
 
     &--list {
@@ -42,6 +67,11 @@
       list-style: none;
 
       animation: textList 10s infinite;
+
+      @include respond(large-phone) {
+        padding-left: 0;
+        margin-top: 4.3rem;
+      }
 
       & ul {
         line-height: 4rem;

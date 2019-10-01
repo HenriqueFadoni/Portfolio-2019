@@ -21,9 +21,11 @@ const Quote = () => {
 				<h1 className="color--white">
 					I do not write code professionally,
 				</h1>
-				<ul className="about__quote--list">
-					{renderList}
-				</ul>
+				<div className="about__quote--listc">
+					<ul className="about__quote--list">
+						{renderList}
+					</ul>
+				</div>
 			</div>
 		</div>
 	)

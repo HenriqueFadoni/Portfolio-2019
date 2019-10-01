@@ -5,7 +5,12 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     background-color: $color-white;
-    @include blurboxshadow
+    @include blurboxshadow;
+
+    @include respond(small-phone) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
   }
 
   &__item {

@@ -8,6 +8,11 @@
     grid-template-rows: 1fr;
     overflow: hidden;
 
+    @include respond(large-phone) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+
     &__slider {
       &--container {
         height: 100%;
@@ -16,17 +21,26 @@
 
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 37rem auto;
+        grid-template-rows: 37rem 5rem;
         row-gap: 2rem;
         justify-content: center;
         align-content: center;
 
         @include respond(tab-land) {
-          grid-template-rows: 40rem auto;
+          grid-template-rows: 40rem 5rem;
         }
 
         @include respond(tab-port) {
-          grid-template-rows: 45rem auto;
+          grid-template-rows: 45rem 5rem;
+        }
+
+        @include respond(large-phone) {
+          grid-template-rows: 30rem 5rem;
+          padding: 4rem;
+        }
+
+        @include respond(small-phone) {
+          grid-template-rows: 45rem 5rem;
         }
       }
 
@@ -53,7 +67,15 @@
         }
 
         @include respond(tab-port) {
-          padding: 0 7rem;
+          padding: 1rem 7rem;
+        }
+
+        @include respond(large-phone) {
+          overflow: hidden;
+        }
+
+        @include respond(small-phone) {
+          padding: 0;
         }
       }
     }
@@ -62,10 +84,19 @@
       overflow: hidden;
       clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
 
+      @include respond(large-phone) {
+        clip-path: none;
+      }
+
       & img {
         height: 100%;
         width: 110%;
         z-index: 1;
+
+        @include respond(large-phone) {
+          height: 110%;
+          width: 100%;
+        }
       }
     }
 
