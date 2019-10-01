@@ -1,8 +1,9 @@
 import React from 'react'
-import { 
-	Map, 
-	Marker, 
-	GoogleApiWrapper 
+import PropTypes from 'prop-types'
+import {
+	Map,
+	Marker,
+	GoogleApiWrapper
 } from 'google-maps-react'
 
 const GoogleMap = props => (
@@ -27,3 +28,7 @@ const GoogleMap = props => (
 export default GoogleApiWrapper({
 	apiKey: 'AIzaSyAqSFNIWTmJ5Pyu024OuJtnVWH_rOtD-s8'
 })(GoogleMap)
+
+GoogleMap.propTypes = {
+	google: PropTypes.object
+}
