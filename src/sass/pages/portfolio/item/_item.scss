@@ -1,5 +1,9 @@
 .portfolio__pinned {
   &--item {
+    height: 42rem;
+    width: 27rem;
+    overflow: hidden;
+
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 27rem 10rem;
