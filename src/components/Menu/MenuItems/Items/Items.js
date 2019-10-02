@@ -4,8 +4,30 @@ import PropTypes from 'prop-types'
 import RouteItem from './RouteItem/RouteItem'
 import LinkItem from './LinkItem/LinkItem'
 
-const Items = props => {
-	const { routes } = props
+const Items = ({ active, onClickHandler }) => {
+	const routes = [
+		{
+			to: '/',
+			title: 'HOME'
+		},
+		{
+			to: '/about',
+			title: 'ABOUT'
+		},
+		{
+			to: '/portfolio',
+			title: 'PORTFOLIO'
+		},
+		{
+			to: 'https://drive.google.com/file/d/16R8eLmjIEAC6k4CUSAZxrJ0ikb6M1RzG/view',
+			title: 'RESUME'
+		},
+		{
+			to: '/contact', 
+			title: 'CONTACTS'
+		}
+	]
+
 	const listItems = routes.map((route, index) => {
 		let render = null
 
@@ -19,7 +41,7 @@ const Items = props => {
 			<li 
 				className="menu__item" 
 				key={index}
-				onClick={props.clickHandler}
+				onClick={onClickHandler}
 			>
 				{render}
 			</li>
@@ -28,7 +50,7 @@ const Items = props => {
 
 	return (
 		<ul className={
-			props.isButtonAct
+			active
 				? 'menu__list--active'
 				: 'menu__list'
 		}>
@@ -40,10 +62,6 @@ const Items = props => {
 export default Items
 
 Items.propTypes = {
-	clickHandler: PropTypes.func.isRequired,
-	isButtonAct: PropTypes.bool.isRequired,
-	routes: PropTypes.arrayOf(PropTypes.shape({
-		to: PropTypes.string,
-		title: PropTypes.string
-	})).isRequired
+	onClickHandler: PropTypes.func.isRequired,
+	active: PropTypes.bool.isRequired
 }

@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const HamburgerBtn = props => (
+const HamburgerBtn = ({ active, onClickHandler }) => (
 	<button
 		type="button"
-		onClick={props.clickHandler}
+		onClick={onClickHandler}
 		className={
-			props.isButtonAct
+			active
 				? 'hamburger hamburger--spin is-active'
 				: 'hamburger hamburger--spin'
 		}>
@@ -19,6 +19,6 @@ const HamburgerBtn = props => (
 export default HamburgerBtn
 
 HamburgerBtn.propTypes = {
-	isButtonAct: PropTypes.bool.isRequired,
-	clickHandler: PropTypes.func
+	active: PropTypes.bool.isRequired,
+	onClickHandler: PropTypes.func
 }

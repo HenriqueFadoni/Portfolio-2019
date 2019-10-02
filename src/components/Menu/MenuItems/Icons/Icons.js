@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
 	faGithubAlt,
@@ -7,39 +7,39 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import PropTypes from 'prop-types'
 
-const Icons = props => {
-	const [iconList] = useState([
+const Icons = ({ active, onClickHandler }) => {
+	const iconList = [
 		{ icon: faGithubAlt, href: 'https://github.com/HenriqueFadoni' },
 		{ icon: faLinkedin, href: 'https://www.linkedin.com/in/henriquefadoni/' },
 		{ icon: faStackOverflow, href: 'https://stackoverflow.com/users/10830708/henrique-fadoni' }
-	])
+	]
+
+	const render = iconList.map((icon, index) => (
+		<a
+			key={index}
+			href={icon.href}
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			<FontAwesomeIcon
+				className="menu__icon"
+				color="white"
+				size="3x"
+				icon={icon.icon}
+			/>
+		</a>
+	))
 
 	return (
 		<div
 			className={
-				props.isButtonAct
+				active
 					? 'menu__icons--active'
 					: 'menu__icons'
 			}
-			onClick={props.clickHandler}
+			onClick={onClickHandler}
 		>
-			{
-				iconList.map((icon, index) => (
-					<a
-						key={index}
-						href={icon.href}
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<FontAwesomeIcon
-							className="menu__icon"
-							color="white"
-							size="3x"
-							icon={icon.icon}
-						/>
-					</a>
-				))
-			}
+			{render}
 		</div>
 	)
 }
@@ -47,6 +47,6 @@ const Icons = props => {
 export default Icons
 
 Icons.propTypes = {
-	clickHandler: PropTypes.func.isRequired,
-	isButtonAct: PropTypes.bool.isRequired
+	onClickHandler: PropTypes.func.isRequired,
+	active: PropTypes.bool.isRequired
 }

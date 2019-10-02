@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Background = props => (
+const Background = ({ active }) => (
 	<div
 		className={
-			props.isButtonAct
+			active
 				? 'menu__background--active'
 				: 'menu__background'
 		}
@@ -16,5 +16,5 @@ const Background = props => (
 export default Background
 
 Background.propTypes = {
-	isButtonAct: PropTypes.bool.isRequired
+	active: PropTypes.bool.isRequired
 }
