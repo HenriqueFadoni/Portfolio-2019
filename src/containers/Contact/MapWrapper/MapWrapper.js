@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-import GoogleMap from './GoogleMap/GoogleMap'
+import MapBox from './MapBox/MapBox'
 
 const MapWrapper = () => {
 	const [screenWidth, setScreenWidth] = useState(window.innerWidth)
@@ -33,7 +33,7 @@ const MapWrapper = () => {
 				? styleResponsive
 				: styleWrap
 		}>
-			<GoogleMap />
+			<MapBox />
 		</div>
 	)
 }
