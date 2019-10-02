@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 import VideoBackground from './VideoBackground/VideoBackground'
-import Text from './MainText/MainText'
+import IntroTitle from './IntroTitle/IntroTitle'
 
 const Home = () => {
 	const [screenWidth, setScreenWidth] = useState(window.innerWidth)
@@ -22,7 +22,7 @@ const Home = () => {
 					? <VideoBackground />
 					: null
 			}
-			<Text />
+			<IntroTitle />
 		</div>
 	)
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Subtitle = () => (
+const QuoteAnimation = () => (
 	<div className="home__text--subtitle-container">
 		<h1 className="subtitle--pacifico color--white">
 			Not Another Random Software Developer.
@@ -8,4 +8,4 @@ const Subtitle = () => (
 	</div>
 )
 
-export default Subtitle
+export default QuoteAnimation
