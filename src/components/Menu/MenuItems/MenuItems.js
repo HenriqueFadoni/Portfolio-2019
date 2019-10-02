@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Items from './Items/Items'
-import Icons from './Icons/Icons'
+import Links from './Links/Links'
+import MenuIcons from './MenuIcons/MenuIcons'
 
 const MenuItems = ({ active, onClickHandler }) => (
 	<nav className={
@@ -10,11 +10,11 @@ const MenuItems = ({ active, onClickHandler }) => (
 			? 'menu__nav--container--active'
 			: 'menu__nav--container'
 	}>
-		<Items
+		<Links
 			active={active}
 			onClickHandler={onClickHandler}
 		/>
-		<Icons
+		<MenuIcons
 			active={active}
 			onClickHandler={onClickHandler}
 		/>

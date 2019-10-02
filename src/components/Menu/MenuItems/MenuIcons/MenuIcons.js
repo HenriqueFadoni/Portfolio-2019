@@ -7,7 +7,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import PropTypes from 'prop-types'
 
-const Icons = ({ active, onClickHandler }) => {
+const MenuIcons = ({ active, onClickHandler }) => {
 	const iconList = [
 		{ icon: faGithubAlt, href: 'https://github.com/HenriqueFadoni' },
 		{ icon: faLinkedin, href: 'https://www.linkedin.com/in/henriquefadoni/' },
@@ -44,9 +44,9 @@ const Icons = ({ active, onClickHandler }) => {
 	)
 }
 
-export default Icons
+export default MenuIcons
 
-Icons.propTypes = {
+MenuIcons.propTypes = {
 	onClickHandler: PropTypes.func.isRequired,
 	active: PropTypes.bool.isRequired
 }

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import RouteItem from './RouteItem/RouteItem'
 import LinkItem from './LinkItem/LinkItem'
 
-const Items = ({ active, onClickHandler }) => {
+const Links = ({ active, onClickHandler }) => {
 	const routes = [
 		{
 			to: '/',
@@ -59,9 +59,9 @@ const Items = ({ active, onClickHandler }) => {
 	)
 }
 
-export default Items
+export default Links
 
-Items.propTypes = {
+Links.propTypes = {
 	onClickHandler: PropTypes.func.isRequired,
 	active: PropTypes.bool.isRequired
 }
