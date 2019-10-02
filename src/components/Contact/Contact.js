@@ -2,7 +2,7 @@ import React from 'react'
 
 import MapWrapper from './MapWrapper/MapWrapper'
 import Content from './Content/Content'
-import Footer from '../../components/Footer/Footer'
+import Footer from '../Footer/Footer'
 
 const Contact = () => {
 	return (

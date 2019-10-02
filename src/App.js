@@ -7,12 +7,12 @@ import {
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
 import './sass/main.scss'
-import Menu from './containers/Menu/Menu'
 
-import Home from './containers/Home/Home'
-import About from './containers/About/About'
-import Portfolio from './containers/Portfolio/Portfolio'
-import Contact from './containers/Contact/Contact'
+import Menu from './components/Menu/Menu'
+import Home from './components/Home/Home'
+import About from './components/About/About'
+import Portfolio from './components/Portfolio/Portfolio'
+import Contact from './components/Contact/Contact'
 
 const App = () => (
 	<div className="App">

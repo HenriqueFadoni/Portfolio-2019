@@ -4,7 +4,7 @@ import Header from './Header/Header'
 import Quote from './Quote/Quote'
 import Steps from './Steps/Steps'
 import Skills from './Skills/Skills'
-import Footer from '../../components/Footer/Footer'
+import Footer from '../Footer/Footer'
 
 const About = () => (
 	<div className="about__container">

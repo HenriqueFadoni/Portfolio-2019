@@ -2,7 +2,7 @@ import React from 'react'
 
 import Pinned from './Pinned/Pinned'
 import OtherProjects from './OtherProjects/OtherProjects'
-import Footer from '../../components/Footer/Footer'
+import Footer from '../Footer/Footer'
 
 const Portfolio = () => {
 	return (
