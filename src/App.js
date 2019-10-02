@@ -14,33 +14,25 @@ import About from './containers/About/About'
 import Portfolio from './containers/Portfolio/Portfolio'
 import Contact from './containers/Contact/Contact'
 
-const App = () => {
-	const routers = (
-		<>
-			<Route path="/" component={Home} exact />
-			<Route path="/about" component={About} />
-			<Route path="/contact" component={Contact} />
-			<Route path="/portfolio" component={Portfolio} />
-			<Redirect to="/" />
-		</>
-	)
-
-	return (
-		<div className="App">
-			<Menu />
-			<TransitionGroup>
-				<CSSTransition
-					key={window.location.key}
-					timeout={300}
-					classNames="fade"
-				>
-					<Switch location={window.location}>
-						{routers}
-					</Switch>
-				</CSSTransition>
-			</TransitionGroup>
-		</div>
-	)
-}
+const App = () => (
+	<div className="App">
+		<Menu />
+		<TransitionGroup>
+			<CSSTransition
+				key={window.location.key}
+				timeout={300}
+				classNames="fade"
+			>
+				<Switch location={window.location}>
+					<Route path="/" component={Home} exact />
+					<Route path="/about" component={About} />
+					<Route path="/contact" component={Contact} />
+					<Route path="/portfolio" component={Portfolio} />
+					<Redirect to="/" />
+				</Switch>
+			</CSSTransition>
+		</TransitionGroup>
+	</div>
+)
 
 export default App
