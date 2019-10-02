@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react'
+import React from 'react'
 import {
 	Route,
 	Switch,
@@ -8,12 +8,11 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
 import './sass/main.scss'
 import Menu from './containers/Menu/Menu'
-import LoadScreen from './containers/LoadScreen/LoadScreen'
 
-const Home = lazy(() => import('./containers/Home/Home'))
-const About = lazy(() => import('./containers/About/About'))
-const Portfolio = lazy(() => import('./containers/Portfolio/Portfolio'))
-const Contact = lazy(() => import('./containers/Contact/Contact'))
+import Home from './containers/Home/Home'
+import About from './containers/About/About'
+import Portfolio from './containers/Portfolio/Portfolio'
+import Contact from './containers/Contact/Contact'
 
 const App = () => {
 	const routers = (
@@ -35,11 +34,9 @@ const App = () => {
 					timeout={300}
 					classNames="fade"
 				>
-					<Suspense fallback={<LoadScreen />}>
-						<Switch location={window.location}>
-							{routers}
-						</Switch>
-					</Suspense>
+					<Switch location={window.location}>
+						{routers}
+					</Switch>
 				</CSSTransition>
 			</TransitionGroup>
 		</div>
