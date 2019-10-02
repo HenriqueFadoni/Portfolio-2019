@@ -7,7 +7,7 @@ const MapBox = () => {
 		longitude: -45.933201,
 		height: '100%',
 		width: '100%',
-		zoom: 7
+		zoom: 4
 	})
 
 	const apiKey = 'pk.eyJ1IjoiZmFkb25pIiwiYSI6ImNrMTk4c3R2YzF6cWQzY3FkamhuMG5mcjIifQ.LfebauCCVH_wlLTS6a360A'
