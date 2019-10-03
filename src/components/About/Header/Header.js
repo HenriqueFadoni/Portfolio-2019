@@ -1,12 +1,12 @@
 import React from 'react'
 
-import Slide from './Slide/Slide'
+import Slider from './Slider/Slider'
 import PersonalImage from './PersonalImage/PersonalImage'
 
 const Header = () => (
 	<div className="about__header">
 		<PersonalImage />
-		<Slide />
+		<Slider />
 	</div>
 )
 

@@ -5,7 +5,7 @@ import SliderText from './SliderText/SliderText'
 
 import { SliderWrittenContent } from '../../../../constants'
 
-const Slide = () => {
+const Slider = () => {
 	const [selectedText, setSelectedText] = useState(1)
 
 	const changeText = val => {
@@ -31,4 +31,4 @@ const Slide = () => {
 	)
 }
 
-export default Slide
+export default Slider
