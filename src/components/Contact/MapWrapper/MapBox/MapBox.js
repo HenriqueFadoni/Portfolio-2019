@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import ReactMapGl, { Marker } from 'react-map-gl'
+import { Marker, StaticMap } from 'react-map-gl'
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 const MapBox = () => {
@@ -14,7 +14,7 @@ const MapBox = () => {
 
 	const apiKey = 'pk.eyJ1IjoiZmFkb25pIiwiYSI6ImNrMTk4c3R2YzF6cWQzY3FkamhuMG5mcjIifQ.LfebauCCVH_wlLTS6a360A'
 	return (
-		<ReactMapGl
+		<StaticMap
 			{...viewport}
 			mapboxApiAccessToken={apiKey}
 			mapStyle="mapbox://styles/fadoni/ck19ezrc700z61dqhwp0zpwfp"
@@ -28,7 +28,7 @@ const MapBox = () => {
 			>
 				<div className="map--marker"></div>
 			</Marker>
-		</ReactMapGl>
+		</StaticMap>
 	)
 }
 
