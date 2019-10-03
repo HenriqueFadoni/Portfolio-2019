@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Marker, InteractiveMap } from 'react-map-gl'
-import 'mapbox-gl/dist/mapbox-gl.css';
+import 'mapbox-gl/dist/mapbox-gl.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
