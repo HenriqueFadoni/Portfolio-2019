@@ -4,64 +4,43 @@ import PropTypes from 'prop-types'
 import RouteItem from './RouteItem/RouteItem'
 import LinkItem from './LinkItem/LinkItem'
 
-const Links = ({ active, onClickHandler }) => {
-	const routes = [
-		{
-			to: '/',
-			title: 'HOME'
-		},
-		{
-			to: '/about',
-			title: 'ABOUT'
-		},
-		{
-			to: '/portfolio',
-			title: 'PORTFOLIO'
-		},
-		{
-			to: 'https://drive.google.com/file/d/16R8eLmjIEAC6k4CUSAZxrJ0ikb6M1RzG/view',
-			title: 'RESUME'
-		},
-		{
-			to: '/contact', 
-			title: 'CONTACTS'
-		}
-	]
-
-	const listItems = routes.map((route, index) => {
-		let render = null
-
-		if (route.title !== 'RESUME') {
-			render = <RouteItem route={route} />
-		} else {
-			render = <LinkItem route={route} />
-		}
-
-		return (
-			<li 
-				className="menu__item" 
-				key={index}
-				onClick={onClickHandler}
-			>
-				{render}
-			</li>
-		)
-	})
-
-	return (
-		<ul className={
-			active
-				? 'menu__list--active'
-				: 'menu__list'
-		}>
-			{listItems}
-		</ul>
-	)
-}
+const Links = ({ active, onClickHandler }) => (
+	<ul className={
+		active
+			? 'menu__list--active'
+			: 'menu__list'
+	}>
+		<RouteItem
+			content='HOME'
+			route='/'
+			onClickHandler={onClickHandler}
+		/>
+		<RouteItem
+			content='ABOUT'
+			route='/about'
+			onClickHandler={onClickHandler}
+		/>
+		<RouteItem
+			content='PORTFOLIO'
+			route='/portfolio'
+			onClickHandler={onClickHandler}
+		/>
+		<LinkItem
+			content='RESUME'
+			route='https://drive.google.com/file/d/16R8eLmjIEAC6k4CUSAZxrJ0ikb6M1RzG/view'
+			onClickHandler={onClickHandler}
+		/>
+		<RouteItem
+			content='CONTACTS'
+			route='/contact'
+			onClickHandler={onClickHandler}
+		/>
+	</ul>
+)
 
 export default Links
 
 Links.propTypes = {
-	onClickHandler: PropTypes.func.isRequired,
-	active: PropTypes.bool.isRequired
+	active: PropTypes.bool.isRequired,
+	onClickHandler: PropTypes.func.isRequired
 }

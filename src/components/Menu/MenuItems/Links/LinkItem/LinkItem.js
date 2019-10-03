@@ -1,22 +1,26 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const LinkItem = props => (
-	<a
-		className="menu__item--link"
-		target="_blank"
-		href={props.route.to}
-		rel="noopener noreferrer"
+const LinkItem = ({ content, route, onClickHandler }) => (
+	<li
+		className="menu__item"
+		onClick={onClickHandler}
 	>
-		{props.route.title}
-	</a>
+		<a
+			className="menu__item--link"
+			target="_blank"
+			href={route}
+			rel="noopener noreferrer"
+		>
+			{content}
+		</a>
+	</li>
 )
 
 export default LinkItem
 
 LinkItem.propTypes = {
-	route: PropTypes.shape({
-		to: PropTypes.string,
-		title: PropTypes.string
-	}).isRequired
+	content: PropTypes.string.isRequired,
+	route: PropTypes.string.isRequired,
+	onClickHandler: PropTypes.func.isRequired
 }
