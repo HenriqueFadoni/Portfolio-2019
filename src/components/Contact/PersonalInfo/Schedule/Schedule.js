@@ -8,14 +8,14 @@ const Schedule = () => {
 
 	const onHoverHandler = () => setIsHover(!isHover)
 
-	const clickHandle = () => calendar.current.click()
+	const onClickHandle = () => calendar.current.click()
 
 	return (
 		<div
 			className="contact__content--schedule"
 			onMouseOver={onHoverHandler}
 			onMouseOut={onHoverHandler}
-			onClick={clickHandle}
+			onClick={onClickHandle}
 		>
 			<a
 				className={isHover ? null : 'calendar-bounce'}

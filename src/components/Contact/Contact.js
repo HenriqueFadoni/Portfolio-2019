@@ -1,13 +1,13 @@
 import React from 'react'
 
 import MapWrapper from './MapWrapper/MapWrapper'
-import Content from './Content/Content'
+import PersonalInfo from './PersonalInfo/PersonalInfo'
 import Footer from '../Footer/Footer'
 
 const Contact = () => (
 	<div className="contact__container">
 		<MapWrapper />
-		<Content />
+		<PersonalInfo />
 		<Footer />
 	</div>
 )
