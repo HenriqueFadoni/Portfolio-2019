@@ -1,25 +1,26 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import PropTypes from 'prop-types'
 
-const MenuIcon = ({ index, route, icon }) => (
+const FooterIcons = ({ route, icon }) => (
   <a
     href={route}
     target="_blank"
     rel="noopener noreferrer"
+    className="margin__right--2"
   >
     <FontAwesomeIcon
-      className="menu__icon"
+      className="footer__icon"
       color="white"
-      size="3x"
+      size="2x"
       icon={icon}
     />
   </a>
 )
 
-export default MenuIcon
+export default FooterIcons
 
-MenuIcon.propTypes = {
+FooterIcons.propTypes = {
   route: PropTypes.string.isRequired,
   icon: PropTypes.object.isRequired
 }

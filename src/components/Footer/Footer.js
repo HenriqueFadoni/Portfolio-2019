@@ -1,12 +1,12 @@
 import React from 'react'
 
-import Title from './Title/Title'
-import Icons from './Icons/Icons'
+import Signature from './Signature/Signature'
+import FooterIcons from './FooterIcons/FooterIcons'
 
 const Footer = () => (
 	<footer className="footer__container contact--footer">
-		<Title />
-		<Icons />
+		<Signature />
+		<FooterIcons />
 	</footer>
 )
 

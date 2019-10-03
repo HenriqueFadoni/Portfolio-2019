@@ -11,14 +11,17 @@ import MenuIcon from './MenuIcon/MenuIcon'
 const MenuIcons = ({ active, onClickHandler }) => {
 	const iconList = [
 		{ 
+			name: 'gitHub',
 			icon: faGithubAlt, 
 			href: 'https://github.com/HenriqueFadoni'
 		},
 		{ 
+			name: 'linkEdin',
 			icon: faLinkedin, 
 			href: 'https://www.linkedin.com/in/henriquefadoni/' 
 		},
 		{ 
+			name: 'stackOverFlow',
 			icon: faStackOverflow, 
 			href: 'https://stackoverflow.com/users/10830708/henrique-fadoni' 
 		}
@@ -26,7 +29,7 @@ const MenuIcons = ({ active, onClickHandler }) => {
 
 	const render = iconList.map((icon, index) => (
 		<MenuIcon 
-			index={index} 
+			key={`${index}-${icon.name}`} 
 			route={icon.href}
 			icon={icon.icon}
 		/>
