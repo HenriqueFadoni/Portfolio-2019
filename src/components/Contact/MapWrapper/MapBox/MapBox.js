@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import { Marker, StaticMap } from 'react-map-gl'
 import 'mapbox-gl/dist/mapbox-gl.css';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
+
 const MapBox = () => {
 	const [viewport, setViewport] = useState({
 		latitude: -22.234171,
@@ -26,7 +29,12 @@ const MapBox = () => {
 				latitude={-22.234171}
 				longitude={-45.933201}
 			>
-				<div className="map--marker"></div>
+				<FontAwesomeIcon
+					className="footer__icon"
+					color="orange"
+					size="3x"
+					icon={faMapMarkerAlt}
+				/>
 			</Marker>
 		</StaticMap>
 	)
