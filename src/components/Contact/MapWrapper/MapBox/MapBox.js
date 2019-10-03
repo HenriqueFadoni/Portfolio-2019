@@ -5,6 +5,8 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 
+import { apiKey } from '../../../../constants'
+
 const MapBox = () => {
 	const [viewport, setViewport] = useState({
 		latitude: -22.234171,
@@ -15,7 +17,6 @@ const MapBox = () => {
 		zoom: 5
 	})
 
-	const apiKey = 'pk.eyJ1IjoiZmFkb25pIiwiYSI6ImNrMTk4c3R2YzF6cWQzY3FkamhuMG5mcjIifQ.LfebauCCVH_wlLTS6a360A'
 	return (
 		<InteractiveMap
 			{...viewport}
@@ -35,7 +36,6 @@ const MapBox = () => {
 				longitude={-45.933201}
 			>
 				<FontAwesomeIcon
-					className="footer__icon"
 					color="orange"
 					size="3x"
 					icon={faMapMarkerAlt}
