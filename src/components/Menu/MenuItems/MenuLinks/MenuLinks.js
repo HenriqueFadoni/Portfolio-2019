@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import RouteItem from './RouteItem/RouteItem'
 import LinkItem from './LinkItem/LinkItem'
 
-const Links = ({ active, onClickHandler }) => (
+const MenuLinks = ({ active, onClickHandler }) => (
 	<ul className={
 		active
 			? 'menu__list--active'
@@ -38,9 +38,9 @@ const Links = ({ active, onClickHandler }) => (
 	</ul>
 )
 
-export default Links
+export default MenuLinks
 
-Links.propTypes = {
+MenuLinks.propTypes = {
 	active: PropTypes.bool.isRequired,
 	onClickHandler: PropTypes.func.isRequired
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Links from './Links/Links'
+import MenuLinks from './MenuLinks/MenuLinks'
 import MenuIcons from './MenuIcons/MenuIcons'
 
 const MenuItems = ({ active, onClickHandler }) => (
@@ -10,7 +10,7 @@ const MenuItems = ({ active, onClickHandler }) => (
 			? 'menu__nav--container--active'
 			: 'menu__nav--container'
 	}>
-		<Links
+		<MenuLinks
 			active={active}
 			onClickHandler={onClickHandler}
 		/>
