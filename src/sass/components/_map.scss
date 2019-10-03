@@ -1,0 +1,23 @@
+.map__container {
+	height: 100vh;
+	width: 50vw;
+	overflow: "hidden";
+
+	@include respond(tab-land) {
+		height: 30vh;
+    width: 100%;
+	}
+
+	@include respond(tab-port) {
+		font-size: 50%;
+	}
+
+	@include respond(large-phone) {
+    height: 30vh;
+    width: 100%;
+  }
+  
+  @include respond(small-phone) {
+		display: none;
+	}
+}

@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const MenuIcon = ({ index, route, icon }) => (
+const MenuIcon = ({ route, icon }) => (
   <a
     href={route}
     target="_blank"

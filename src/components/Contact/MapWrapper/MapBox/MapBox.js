@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import ReactMapGl, { Marker } from 'react-map-gl'
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 const MapBox = () => {
 	const [viewport, setViewport] = useState({
