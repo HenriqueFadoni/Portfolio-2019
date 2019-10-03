@@ -8,10 +8,6 @@
     width: 100%;
 	}
 
-	@include respond(tab-port) {
-		font-size: 50%;
-	}
-
 	@include respond(large-phone) {
     height: 30vh;
     width: 100%;
