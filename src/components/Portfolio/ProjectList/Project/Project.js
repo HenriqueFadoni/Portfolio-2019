@@ -1,32 +1,22 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Image from './Image/Image'
-import Text from './Text/Text'
+import PreView from './PreView/PreView'
+import Description from './Description/Description'
 
-const Project = props => {
-	const {
-		name,
-		tag,
-		image,
-		repoLink,
-		webLink
-	} = props
-
-	return (
-		<div className="portfolio__pinned--item">
-			<Image
-				image={image}
-				repoLink={repoLink}
-				webLink={webLink}
-			/>
-			<Text 
-				name={name} 
-				tag={tag}
-			/>
-		</div>
-	)
-}
+const Project = ({ name, tag, image, repoLink, webLink }) => (
+	<div className="portfolio__pinned--item">
+		<PreView
+			image={image}
+			repoLink={repoLink}
+			webLink={webLink}
+		/>
+		<Description
+			name={name}
+			tag={tag}
+		/>
+	</div>
+)
 
 export default Project
 

@@ -1,14 +1,9 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
-import Options from './Options/Options'
+import PreViewLinks from './PreViewLinks/PreViewLinks'
 
-const Image = props => {
-	const {
-		image,
-		repoLink,
-		webLink
-	} = props
+const PreView = ({ image, repoLink, webLink }) => {
 	const [show, setShow] = useState(false)
 
 	const onHover = () => setShow(true)
@@ -22,7 +17,7 @@ const Image = props => {
 		>
 			{
 				show
-					? <Options repo={repoLink} web={webLink} />
+					? <PreViewLinks repo={repoLink} web={webLink} />
 					: null
 			}
 			<img src={image} alt="Project" />
@@ -30,9 +25,9 @@ const Image = props => {
 	)
 }
 
-export default Image
+export default PreView
 
-Image.propTypes = {
+PreView.propTypes = {
 	image: PropTypes.node.isRequired,
 	repoLink: PropTypes.string.isRequired,
 	webLink: PropTypes.oneOfType([

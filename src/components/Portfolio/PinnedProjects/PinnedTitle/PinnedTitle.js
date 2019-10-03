@@ -2,7 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 
-const Title = () => (
+const PinnedTitle = () => (
 	<div className="portfolio__pinned--title">
 		<FontAwesomeIcon
 			color="#ff581a"
@@ -13,4 +13,4 @@ const Title = () => (
 	</div>
 )
 
-export default Title
+export default PinnedTitle

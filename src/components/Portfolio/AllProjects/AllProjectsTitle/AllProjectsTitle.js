@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Title = () => (
+const AllProjectsTitle = () => (
 	<div className="overall__title">
 		<h1>
 			Projects
@@ -8,4 +8,4 @@ const Title = () => (
 	</div>
 )
 
-export default Title
+export default AllProjectsTitle

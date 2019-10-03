@@ -1,19 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Text = props => (
+const Description = ({ name, tag }) => (
 	<div className="portfolio__pinned--item-text">
-		<h4>{props.name}</h4>
+		<h4>{name}</h4>
 		<div className="portfolio__pinned--item-tag">
 			<div className="portfolio__pinned--item-dot">&nbsp;</div>
-			<h4>{props.tag}</h4>
+			<h4>{tag}</h4>
 		</div>
 	</div>
 )
 
-export default Text
+export default Description
 
-Text.propTypes = {
+Description.propTypes = {
 	name: PropTypes.string.isRequired,
 	tag: PropTypes.string.isRequired
 }

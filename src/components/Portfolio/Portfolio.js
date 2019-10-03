@@ -1,17 +1,15 @@
 import React from 'react'
 
-import Pinned from './Pinned/Pinned'
-import OtherProjects from './OtherProjects/OtherProjects'
+import PinnedProjects from './PinnedProjects/PinnedProjects'
+import AllProjects from './AllProjects/AllProjects'
 import Footer from '../Footer/Footer'
 
-const Portfolio = () => {
-	return (
-		<div className="portfolio__container">
-			<Pinned />
-			<OtherProjects />
-			<Footer />
-		</div>
-	)
-}
+const Portfolio = () => (
+	<div className="portfolio__container">
+		<PinnedProjects />
+		<AllProjects />
+		<Footer />
+	</div>
+)
 
 export default Portfolio
