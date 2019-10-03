@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 
-import Button from './Button/Button'
-import PersonalTxt from './PersonalTxt/PersonalTxt'
-import ProfessionalTxt from './ProfessionalTxt/ProfessinalTxt'
+import ChangeTxtBtn from './ChangeTxtBtn/ChangeTxtBtn'
+import SliderText from './SliderText/SliderText'
+
+import { SliderWrittenContent } from '../../../../constants'
 
 const Slide = () => {
 	const [selectedText, setSelectedText] = useState(1)
@@ -19,10 +20,10 @@ const Slide = () => {
 		<div className="about__header__slider--container">
 			{
 				selectedText === 1
-					? <ProfessionalTxt />
-					: <PersonalTxt />
+					? <SliderText {...SliderWrittenContent.Personal} />
+					: <SliderText {...SliderWrittenContent.Professional} />
 			}
-			<Button
+			<ChangeTxtBtn
 				selectedText={selectedText}
 				clickHandler={changeText}
 			/>
