@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Marker, StaticMap } from 'react-map-gl'
+import { Marker, InteractiveMap } from 'react-map-gl'
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -17,12 +17,17 @@ const MapBox = () => {
 
 	const apiKey = 'pk.eyJ1IjoiZmFkb25pIiwiYSI6ImNrMTk4c3R2YzF6cWQzY3FkamhuMG5mcjIifQ.LfebauCCVH_wlLTS6a360A'
 	return (
-		<StaticMap
+		<InteractiveMap
 			{...viewport}
 			mapboxApiAccessToken={apiKey}
 			mapStyle="mapbox://styles/fadoni/ck19ezrc700z61dqhwp0zpwfp"
-			onViewportChange={viewport => {
-				setViewport(viewport)
+			onViewportChange={newViewport => {
+				setViewport({
+					...viewport,
+					latitude: newViewport.latitude,
+					longitude: newViewport.longitude,
+					zoom: newViewport.zoom
+				})
 			}}
 		>
 			<Marker
@@ -36,7 +41,7 @@ const MapBox = () => {
 					icon={faMapMarkerAlt}
 				/>
 			</Marker>
-		</StaticMap>
+		</InteractiveMap>
 	)
 }
 
