@@ -1,61 +1,10 @@
 import React, { useState, useEffect } from 'react'
 
 import Subject from './Subject/Subject'
+import { techList } from '../../../../constants'
 
 const Subjects = () => {
 	const [isActive, setIsActive] = useState(false)
-	const techList = [
-		{
-			title: 'Programming Languages',
-			list: [
-				'JavaScript ES8+',
-				'Python',
-				'Java',
-				'C/C++'
-			]
-		},
-		{
-			title: 'Front-End',
-			list: [
-				'HTML',
-				'CSS',
-				'React',
-				'Redux/SAGA',
-				'React Native',
-				'SASS',
-				'TypeScript'
-			]
-		},
-		{
-			title: 'Back-End',
-			list: [
-				'Django',
-				'Node.js'
-			]
-		},
-		{
-			title: 'Testing',
-			list: [
-				'Jest',
-				'Ensyme'
-			]
-		},
-		{
-			title: 'Version Control',
-			list: [
-				'GitHub',
-				'BitBucket'
-			]
-		},
-		{
-			title: 'Bonus',
-			list: [
-				'Zepeling',
-				'SCRUM',
-				'Agile'
-			]
-		}
-	]
 
 	const scrollHandler = () => {
 		if (window.scrollY >= 890) {

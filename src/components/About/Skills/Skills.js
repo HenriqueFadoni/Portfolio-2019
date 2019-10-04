@@ -1,13 +1,13 @@
 import React from 'react'
 
-import Title from './Title/Title'
-import Quote from './Quote/Quote'
+import SkillTitle from './SkillTitle/SkillTitle'
+import DevMessage from './DevMessage/DevMessage'
 import Subjects from './Subjects/Subjects'
 
 const Skills = () => (
 	<section className="about-skills__container">
-		<Title />
-		<Quote />
+		<SkillTitle />
+		<DevMessage />
 		<Subjects />
 	</section>
 )

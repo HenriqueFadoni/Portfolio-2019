@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Quote = () => (
+const DevMessage = () => (
 	<div className="about-skills__quote">
 		<h1>
 			Any good writer can write in <span>ANY</span> device. Just like
@@ -9,4 +9,4 @@ const Quote = () => (
 	</div>
 )
 
-export default Quote
+export default DevMessage

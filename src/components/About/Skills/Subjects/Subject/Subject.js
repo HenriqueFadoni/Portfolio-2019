@@ -1,27 +1,24 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Subject = props => {
-	const renderList = props.list.map((item, i) => (
-		<div
+import Topic from './Topic/Topic'
+
+const Subject = ({ title, list, isActive }) => {
+	const topicList = list.map((item, i) => (
+		<Topic
 			key={`${i}-${item}`}
-			className={
-				props.isActive
-					? 'about-subjects__item'
-					: 'about-subjects__item--hidden'
-			}
-		>
-			<h3>{item}</h3>
-		</div>
+			item={item}
+			isActive={isActive}
+		/>
 	))
 
 	return (
 		<div>
 			<div className="about-subjects__title subtitle--pacifico">
-				<h2>{props.title}</h2>
+				<h2>{title}</h2>
 			</div>
 			<div className="about-subjects__list">
-				{renderList}
+				{topicList}
 			</div>
 		</div>
 	)

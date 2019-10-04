@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Title = () => (
+const SkillTitle = () => (
 	<div className="about-skills__title">
 		<h1>Skills</h1>
 	</div>
 )
 
-export default Title
+export default SkillTitle

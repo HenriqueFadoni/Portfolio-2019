@@ -71,7 +71,8 @@ export const portfolioAllProjects = [
 	}
 ]
 
-export const SliderWrittenContent = {
+// Slider Text
+export const sliderWrittenContent = {
 	Personal: {
 		title: 'Brief Summary',
 		paragraph: `I am a Software Developer who has developed products mainly for Startups and Law Offices. Moreover,
@@ -86,3 +87,93 @@ export const SliderWrittenContent = {
 		I am passionate about learning new technologies and being challenged`
 	}
 }
+
+// Steps Text
+
+export const stepsTextList = [
+	{
+		number: '01.',
+		title: 'Research',
+		message: `
+			In-depth analysis of the client's needs and requirements. 
+			Leading to extensive learning about the subject matter until 
+			becoming ultimately familiar with the topic. Plan and determine 
+			the best approach to the specific task proposed by the customer.
+		`
+	},
+	{
+		number: '02.',
+		title: 'Design',
+		message: `
+			Designing, in a nutshell, comprise not only from determining the 
+			superficial appearance of a product. But also by involving market 
+			research, technical research, design of a concept, and prototype mockup. 
+			It is worth saying designing is a cross-functional process which co-depend 
+			in other areas.
+		`
+	},
+	{
+		number: '03.',
+		title: 'Develop',
+		message: `
+			All the data collected during the research and design phases, including 
+			materials and methods, are then manipulated for the production of specific 
+			profitable products for the customer.
+		`
+	}
+]
+
+// Technologies
+
+export const techList = [
+	{
+		title: 'Programming Languages',
+		list: [
+			'JavaScript ES8+',
+			'Python',
+			'Java',
+			'C/C++'
+		]
+	},
+	{
+		title: 'Front-End',
+		list: [
+			'HTML',
+			'CSS',
+			'React',
+			'Redux/SAGA',
+			'React Native',
+			'SASS',
+			'TypeScript'
+		]
+	},
+	{
+		title: 'Back-End',
+		list: [
+			'Django',
+			'Node.js'
+		]
+	},
+	{
+		title: 'Testing',
+		list: [
+			'Jest',
+			'Ensyme'
+		]
+	},
+	{
+		title: 'Version Control',
+		list: [
+			'GitHub',
+			'BitBucket'
+		]
+	},
+	{
+		title: 'Bonus',
+		list: [
+			'Zepeling',
+			'SCRUM',
+			'Agile'
+		]
+	}
+]
