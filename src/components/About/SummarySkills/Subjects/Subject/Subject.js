@@ -17,9 +17,9 @@ const Subject = ({ title, list, isActive }) => {
 			<div className="about-subjects__title subtitle--pacifico">
 				<h2>{title}</h2>
 			</div>
-			<div className="about-subjects__list">
+			<ul className="about-subjects__list">
 				{topicList}
-			</div>
+			</ul>
 		</div>
 	)
 }

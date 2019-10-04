@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Topic = ({ item, isActive }) => (
-	<div
+	<li
 		className={
 			isActive
 				? 'about-subjects__item'
@@ -10,7 +10,7 @@ const Topic = ({ item, isActive }) => (
 		}
 	>
 		<h3>{item}</h3>
-	</div>
+	</li>
 )
 
 export default Topic
