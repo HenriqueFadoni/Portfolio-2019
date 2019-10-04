@@ -1,27 +1,41 @@
-import React, { useState } from 'react'
+import React, { Component } from 'react'
 
 import HamburgerBtn from './HamburgerBtn/HamburgerBtn'
 import Background from './Background/Background'
 import MenuItems from './MenuItems/MenuItems'
 
-const Menu = () => {
-	const [active, setActive] = useState(false)
+import enhanceWithClickOutside from 'react-click-outside'
 
-	const onClickHandler = () => setActive(!active)
+class Menu extends Component {
+	state = {
+		active: false
+	}
 
-	return (
-		<div className="menu__container">
-			<HamburgerBtn
-				active={active}
-				onClickHandler={onClickHandler}
-			/>
-			<MenuItems 
-				active={active} 
-				onClickHandler={onClickHandler}
-			/>
-			<Background active={active} />
-		</div>
-	)
+	onClickHandler = () => this.setState({ active: !this.state.active })
+
+	handleClickOutside() {
+		if (this.state.active) {
+			this.onClickHandler();
+		}
+	}
+	
+	render() {
+		const { active } = this.state
+
+		return (
+			<div className="menu__container">
+				<HamburgerBtn
+					active={active}
+					onClickHandler={this.onClickHandler}
+				/>
+				<MenuItems
+					active={active}
+					onClickHandler={this.onClickHandler}
+				/>
+				<Background active={active} />
+			</div>
+		)
+	}
 }
 
-export default Menu
+export default enhanceWithClickOutside(Menu)
