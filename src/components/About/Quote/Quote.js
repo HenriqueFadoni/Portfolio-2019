@@ -1,34 +1,14 @@
 import React from 'react'
 
-const Quote = () => {
-	const list = [
-		'I bring dreams to reality!',
-		'I create products!',
-		'I change lives!'
-	]
+import StaticText from './StaticText/StaticText'
+import InteractiveText from './InteractiveText/InteractiveText'
 
-	const renderList = list.map((item, i) => (
-		<li key={i}>
-			<h1 className="color--white">
-				{item}
-			</h1>
-		</li>
-	))
-
-	return (
-		<div className="about__quote--container">
-			<div className="about__quote--text">
-				<h1 className="color--white">
-					I do not write code professionally,
-				</h1>
-				<div className="about__quote--listc">
-					<ul className="about__quote--list">
-						{renderList}
-					</ul>
-				</div>
-			</div>
+const Quote = () => (
+	<div className="about__quote--container">
+		<div className="about__quote--text">
+			<StaticText />
+			<InteractiveText />
 		</div>
-	)
-}
-
+	</div>
+)
 export default Quote
