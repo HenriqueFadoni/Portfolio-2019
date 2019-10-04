@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Header from './Header/Header'
+import AboutHeader from './AboutHeader/AboutHeader'
 import Quote from './Quote/Quote'
 import Steps from './Steps/Steps'
 import Skills from './Skills/Skills'
@@ -8,7 +8,7 @@ import Footer from '../Footer/Footer'
 
 const About = () => (
 	<div className="about__container">
-		<Header />
+		<AboutHeader />
 		<Quote />
 		<Steps />
 		<Skills />
