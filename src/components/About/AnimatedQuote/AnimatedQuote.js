@@ -3,7 +3,7 @@ import React from 'react'
 import StaticText from './StaticText/StaticText'
 import InteractiveText from './InteractiveText/InteractiveText'
 
-const Quote = () => (
+const AnimatedQuote = () => (
 	<div className="about__quote--container">
 		<div className="about__quote--text">
 			<StaticText />
@@ -11,4 +11,4 @@ const Quote = () => (
 		</div>
 	</div>
 )
-export default Quote
+export default AnimatedQuote

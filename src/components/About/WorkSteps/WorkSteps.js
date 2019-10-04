@@ -3,7 +3,7 @@ import React from 'react'
 import { stepsTextList as stepList } from '../../../constants'
 import StepItem from './StepItem/StepItem'
 
-const Steps = () => {
+const WorkSteps = () => {
 	const allSteps = stepList.map((item, i) => (
 		<StepItem 
 			key={`${i}-${item.title}`}
@@ -21,4 +21,4 @@ const Steps = () => {
 	)
 }
 
-export default Steps
+export default WorkSteps

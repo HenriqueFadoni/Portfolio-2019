@@ -1,17 +1,17 @@
 import React from 'react'
 
 import AboutHeader from './AboutHeader/AboutHeader'
-import Quote from './Quote/Quote'
-import Steps from './Steps/Steps'
-import Skills from './Skills/Skills'
+import AnimatedQuote from './AnimatedQuote/AnimatedQuote'
+import WorkSteps from './WorkSteps/WorkSteps'
+import SummarySkills from './SummarySkills/SummarySkills'
 import Footer from '../Footer/Footer'
 
 const About = () => (
 	<div className="about__container">
 		<AboutHeader />
-		<Quote />
-		<Steps />
-		<Skills />
+		<AnimatedQuote />
+		<WorkSteps />
+		<SummarySkills />
 		<Footer />
 	</div>
 )

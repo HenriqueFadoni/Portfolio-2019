@@ -4,7 +4,7 @@ import SkillTitle from './SkillTitle/SkillTitle'
 import DevMessage from './DevMessage/DevMessage'
 import Subjects from './Subjects/Subjects'
 
-const Skills = () => (
+const SummarySkills = () => (
 	<section className="about-skills__container">
 		<SkillTitle />
 		<DevMessage />
@@ -12,4 +12,4 @@ const Skills = () => (
 	</section>
 )
 
-export default Skills
+export default SummarySkills
