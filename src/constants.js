@@ -3,6 +3,11 @@ import project1 from './assets/images/project-1.png'
 import project2 from './assets/images/project-2.png'
 import project4 from './assets/images/project-4.png'
 import project5 from './assets/images/project-5.png'
+import project6 from './assets/images/project-6.png'
+import project7 from './assets/images/project-7.png'
+import project9 from './assets/images/project-9.png'
+import project10 from './assets/images/project-10.png'
+import project11 from './assets/images/project-11.png'
 
 // Constants
 export const apiKey = 'pk.eyJ1IjoiZmFkb25pIiwiYSI6ImNrMTk4c3R2YzF6cWQzY3FkamhuMG5mcjIifQ.LfebauCCVH_wlLTS6a360A'
@@ -10,18 +15,11 @@ export const apiKey = 'pk.eyJ1IjoiZmFkb25pIiwiYSI6ImNrMTk4c3R2YzF6cWQzY3FkamhuMG
 // Pinned Portfolio Projects ( MAX: 5 ) 
 export const pinnedPortfolioProjects = [
 	{
-		name: 'PathFinder',
+		name: 'Portfolio 2019',
 		tag: 'React',
-		image: project1,
-		repoLink: 'https://github.com/HenriqueFadoni/npm-library',
-		webLink: 'https://www.npmjs.com/package/employ-fadoni-now'
-	},
-	{
-		name: 'PathFinder',
-		tag: 'React',
-		image: project1,
-		repoLink: 'https://github.com/HenriqueFadoni/npm-library',
-		webLink: 'https://www.npmjs.com/package/employ-fadoni-now'
+		image: project6,
+		repoLink: 'https://github.com/HenriqueFadoni/Portfolio-2019',
+		webLink: 'https://master.d2epdsxxe4w061.amplifyapp.com/'
 	}
 ]
 
@@ -35,27 +33,6 @@ export const portfolioAllProjects = [
 		webLink: 'https://henriquefadoni.github.io/money-now/'
 	},
 	{
-		name: 'Crypto Currency App',
-		tag: 'React Native',
-		image: project1,
-		repoLink: 'https://github.com/HenriqueFadoni/crypto-currency-app',
-		webLink: false
-	},
-	{
-		name: 'NPM Library',
-		tag: 'React',
-		image: project4,
-		repoLink: 'https://github.com/HenriqueFadoni/npm-library',
-		webLink: 'https://www.npmjs.com/package/employ-fadoni-now'
-	},
-	{
-		name: 'Cocktail Finder',
-		tag: 'React Native',
-		image: project1,
-		repoLink: 'https://github.com/HenriqueFadoni/CocktailFinder-Interview',
-		webLink: false
-	},
-	{
 		name: 'Burguer Builder',
 		tag: 'React',
 		image: project5,
@@ -63,11 +40,32 @@ export const portfolioAllProjects = [
 		webLink: 'https://react-my-burger-fadoni.firebaseapp.com/'
 	},
 	{
-		name: 'DashBoard',
-		tag: 'React',
-		image: project1,
-		repoLink: 'https://github.com/HenriqueFadoni/dashboard',
+		name: 'Cocktail Finder App',
+		tag: 'React Native',
+		image: project11,
+		repoLink: 'https://github.com/HenriqueFadoni/CocktailFinder-Interview',
 		webLink: false
+	},
+	{
+		name: 'Natours Project',
+		tag: 'SASS',
+		image: project7,
+		repoLink: 'https://github.com/HenriqueFadoni/Natours-Project',
+		webLink: 'https://henriquefadoni.github.io/Natours-Project/'
+	},
+	{
+		name: 'Nexter',
+		tag: 'SASS',
+		image: project9,
+		repoLink: 'https://github.com/HenriqueFadoni/nexter',
+		webLink: 'https://henriquefadoni.github.io/nexter/'
+	},
+	{
+		name: 'Trillo',
+		tag: 'SASS',
+		image: project10,
+		repoLink: 'https://github.com/HenriqueFadoni/trillo',
+		webLink: 'https://henriquefadoni.github.io/trillo/'
 	}
 ]
 
