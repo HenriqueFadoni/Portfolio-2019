@@ -1,7 +1,6 @@
 // Imports
-import project1 from './assets/images/project-1.png'
+
 import project2 from './assets/images/project-2.png'
-import project4 from './assets/images/project-4.png'
 import project5 from './assets/images/project-5.png'
 import project6 from './assets/images/project-6.png'
 import project7 from './assets/images/project-7.png'

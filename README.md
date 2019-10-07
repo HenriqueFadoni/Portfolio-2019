@@ -12,6 +12,7 @@ you will be able to schedule interviews and check my availability during the wee
 ## Libs
 
 - Font Awesome
-- Google Maps Api
+- Map Box Api
+- Map Gl Api
 - Hamburgers
 - PropTypes
