@@ -20,7 +20,7 @@ const PreView = ({ image, repoLink, webLink }) => {
 					? <PreViewLinks repo={repoLink} web={webLink} />
 					: null
 			}
-			<img src={image} alt="Project" />
+			<img src={image} alt="Portfolio's Project Preview" />
 		</div>
 	)
 }
