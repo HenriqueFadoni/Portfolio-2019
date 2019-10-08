@@ -26,8 +26,7 @@ const MapBox = () => {
 				setViewport({
 					...viewport,
 					latitude: newViewport.latitude,
-					longitude: newViewport.longitude,
-					zoom: newViewport.zoom
+					longitude: newViewport.longitude
 				})
 			}}
 		>
