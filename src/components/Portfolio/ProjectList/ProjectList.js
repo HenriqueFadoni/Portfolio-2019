@@ -7,11 +7,7 @@ const ProjectList = ({ projectList }) => {
 	const renderList = projectList.map((project, i) => (
 		<Project
 			key={`${i}-${project.name}`}
-			name={project.name}
-			tag={project.tag}
-			image={project.image}
-			repoLink={project.repoLink}
-			webLink={project.webLink}
+			project={project}
 		/>
 	))
 

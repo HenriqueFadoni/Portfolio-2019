@@ -4,16 +4,16 @@ import PropTypes from 'prop-types'
 import PreView from './PreView/PreView'
 import Description from './Description/Description'
 
-const Project = ({ name, tag, image, repoLink, webLink }) => (
+const Project = ({ project }) => (
 	<div className="portfolio__pinned--item">
 		<PreView
-			image={image}
-			repoLink={repoLink}
-			webLink={webLink}
+			image={project.image}
+			repoLink={project.repoLink}
+			webLink={project.webLink}
 		/>
 		<Description
-			name={name}
-			tag={tag}
+			name={project.name}
+			tag={project.tag}
 		/>
 	</div>
 )
@@ -21,12 +21,14 @@ const Project = ({ name, tag, image, repoLink, webLink }) => (
 export default Project
 
 Project.propTypes = {
-	name: PropTypes.string.isRequired,
-	tag: PropTypes.string.isRequired,
-	image: PropTypes.node.isRequired,
-	repoLink: PropTypes.string.isRequired,
-	webLink: PropTypes.oneOfType([
-		PropTypes.string,
-		PropTypes.bool
-	]).isRequired
+	project: PropTypes.shape({
+		name: PropTypes.string.isRequired,
+		tag: PropTypes.string.isRequired,
+		image: PropTypes.node.isRequired,
+		repoLink: PropTypes.string.isRequired,
+		webLink: PropTypes.oneOfType([
+			PropTypes.string,
+			PropTypes.bool
+		]).isRequired
+	})
 }
