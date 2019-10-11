@@ -1,108 +1,101 @@
 .about {
-  &__header {
-    height: 100vh;
-    width: 100%;
+	&__header {
+		height: 100vh;
+		width: 100%;
 
-    display: grid;
-    grid-template-columns: repeat(2, minmax(min-content, 1fr));
-    grid-template-rows: 1fr;
-    overflow: hidden;
+		display: grid;
+		grid-template-columns: repeat(2, minmax(min-content, 1fr));
+		grid-template-rows: 1fr;
+		overflow: hidden;
 
-    @include respond(large-phone) {
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-    }
+		@include respond(large-phone) {
+			grid-template-columns: 1fr;
+			grid-template-rows: auto;
+		}
 
-    &__slider {
-      &--container {
-        height: 100%;
-        width: 100%;
-        z-index: 2;
+		&__slider {
+			&--container {
+				height: 100%;
+				width: 100%;
+				z-index: 2;
 
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 37rem 5rem;
-        row-gap: 2rem;
-        justify-content: center;
-        align-content: center;
+				display: grid;
+				grid-template-columns: 1fr;
+				grid-template-rows: 37rem 5rem;
+				row-gap: 2rem;
+				justify-content: center;
+				align-content: center;
 
-        @include respond(tab-land) {
-          grid-template-rows: 40rem 5rem;
-        }
+				@include respond(tab-land) {
+					grid-template-rows: 40rem 5rem;
+				}
 
-        @include respond(tab-port) {
-          grid-template-rows: 45rem 5rem;
-        }
+				@include respond(tab-port) {
+					grid-template-rows: 45rem 5rem;
+				}
 
-        @include respond(large-phone) {
-          grid-template-rows: 30rem 5rem;
-          padding: 4rem;
-        }
+				@include respond(large-phone) {
+					grid-template-rows: 30rem 5rem;
+					padding: 4rem;
+				}
 
-        @include respond(small-phone) {
-          grid-template-rows: 45rem 5rem;
-        }
-      }
+				@include respond(small-phone) {
+					grid-template-rows: 45rem 5rem;
+				}
+			}
 
-      &--text {
-        height: 100%;
-        width: 100%;
-        padding: 0 8rem;
-        animation: appear 0.5s ease-in;
+			&--text {
+				height: 100%;
+				width: 100%;
+				padding: 0 8rem;
+				animation: appear 0.5s ease-in;
 
-        & h1 {
-          font-family: "Courgette", cursive;
-          font-size: 4rem;
-          margin-bottom: 3rem;
+				& h1 {
+					font-family: "Courgette", cursive;
+					font-size: 4rem;
+					margin-bottom: 3rem;
 
-          @include respond(tab-land) {
-            font-size: 3.3rem;
-          }
-        }
+					@include respond(tab-land) {
+						font-size: 3.3rem;
+					}
+				}
 
-        & p {
-          font-family: "Nunito", cursive;
-          font-size: 1.7rem;
-          text-align: justify;
-        }
+				& p {
+					font-family: "Nunito", cursive;
+					font-size: 1.7rem;
+					text-align: justify;
+				}
 
-        @include respond(tab-port) {
-          padding: 1rem 7rem;
-        }
+				@include respond(tab-port) {
+					padding: 1rem 7rem;
+				}
 
-        @include respond(large-phone) {
-          overflow: hidden;
-        }
+				@include respond(large-phone) {
+					overflow: hidden;
+				}
 
-        @include respond(small-phone) {
-          padding: 0;
-        }
-      }
-    }
+				@include respond(small-phone) {
+					padding: 0;
+				}
+			}
+		}
 
-    &__image {
-      overflow: hidden;
+		&__image {
+			overflow: hidden;
       clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+      background-image: url('../../../../assets/images/photo_me.jpg');
+      background-size: cover;
 
-      @include respond(large-phone) {
+			@include respond(large-phone) {
         clip-path: none;
-      }
+        height: 50rem;
+        width: 100vw;
+			}
+		}
 
-      & img {
-        height: 100%;
-        width: 110%;
-        z-index: 1;
-
-        @include respond(large-phone) {
-          height: 110%;
-          width: 100%;
-        }
-      }
-    }
-
-    &__button--container {
-      display: flex;
-      justify-self: center;
-    }
-  }
+		&__button--container {
+			display: flex;
+			justify-self: center;
+		}
+	}
 }
