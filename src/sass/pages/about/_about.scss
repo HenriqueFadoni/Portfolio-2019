@@ -53,11 +53,11 @@
       }
     }
 
-    &--listc {
+    &--list-container {
       @include respond(large-phone) {
         position: absolute;
         overflow: hidden;
-        height: 4rem;
+        height: 3.5rem;
       }
     }
 
@@ -68,9 +68,13 @@
 
       animation: textList 10s infinite;
 
+      @include respond(tab-port) {
+        padding-left: 43rem;
+      }
+
       @include respond(large-phone) {
         padding-left: 0;
-        margin-top: 4.3rem;
+        margin-top: 3.3rem;
       }
 
       & ul {

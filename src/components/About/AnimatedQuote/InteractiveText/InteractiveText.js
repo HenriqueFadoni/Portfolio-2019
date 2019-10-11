@@ -16,7 +16,7 @@ const InteractiveText = () => {
 	))
 
 	return (
-		<div className="about__quote--listc">
+		<div className="about__quote--list-container">
 			<ul className="about__quote--list">
 				{renderList}
 			</ul>

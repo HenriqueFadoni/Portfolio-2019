@@ -10,7 +10,9 @@
 
 		@include respond(large-phone) {
 			grid-template-columns: 1fr;
-			grid-template-rows: auto;
+      grid-template-rows: auto;
+      
+      height: auto;
 		}
 
 		&__slider {
@@ -90,7 +92,7 @@
         clip-path: none;
         height: 50rem;
         width: 100vw;
-			}
+      }
 		}
 
 		&__button--container {
