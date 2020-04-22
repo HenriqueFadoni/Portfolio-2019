@@ -27,7 +27,7 @@ const MenuLinks = ({ active, onClickHandler }) => (
 		/>
 		<LinkItem
 			content='RESUME'
-			route='https://drive.google.com/file/d/16R8eLmjIEAC6k4CUSAZxrJ0ikb6M1RzG/view'
+			route='https://drive.google.com/file/d/1KZeiOD68-bun5Tj2SRjUcNt232V4VDFN/view?usp=sharing'
 			onClickHandler={onClickHandler}
 		/>
 		<RouteItem
