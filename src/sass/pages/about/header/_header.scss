@@ -85,14 +85,15 @@
 		&__image {
 			overflow: hidden;
       clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
-      background-image: url('../../../../assets/images/photo_me.jpg');
+      background-image: url('../../../../assets/images/photo_me-2.jpg');
       background-size: cover;
 
 			@include respond(large-phone) {
         clip-path: none;
         height: 50rem;
-        width: 100vw;
-      }
+				width: 100vw;
+				background-position: center;
+			}
 		}
 
 		&__button--container {
