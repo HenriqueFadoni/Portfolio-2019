@@ -9,8 +9,8 @@ import { apiKey } from '../../../../constants'
 
 const MapBox = () => {
 	const [viewport, setViewport] = useState({
-		latitude: -22.234171,
-		longitude: -45.933201,
+		latitude: 43.651070,
+		longitude: -79.347015,
 		trackResize: true,
 		height: '100%',
 		width: '100%',
@@ -31,11 +31,11 @@ const MapBox = () => {
 			}}
 		>
 			<Marker
-				latitude={-22.234171}
-				longitude={-45.933201}
+				latitude={44.25}
+				longitude={-79.5832}
 			>
 				<FontAwesomeIcon
-					color="orange"
+					color="white"
 					size="3x"
 					icon={faMapMarkerAlt}
 				/>

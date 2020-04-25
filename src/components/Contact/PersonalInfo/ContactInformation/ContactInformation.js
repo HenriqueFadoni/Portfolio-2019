@@ -1,16 +1,12 @@
 import React from 'react'
 
 import ContactInfoTitle from './ContactInfoTitle/ContactInfoTitle'
-import Email from './Email/Email'
-import PhoneNum from './PhoneNum/PhoneNum'
-import Address from './Address/Address'
+import ContactForm from './ContactForm/ContactForm';
 
 const ContactInformation = () => (
 	<div className="contact__content--email">
 		<ContactInfoTitle />
-		<Email />
-		<PhoneNum />
-		<Address />
+		<ContactForm />
 	</div>
 )
 
