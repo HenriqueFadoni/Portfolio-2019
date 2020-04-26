@@ -7,6 +7,8 @@ import project7 from './assets/images/project-7.png'
 import project9 from './assets/images/project-9.png'
 import project10 from './assets/images/project-10.png'
 import project11 from './assets/images/project-11.png'
+import project12 from './assets/images/project-12.png'
+import project13 from './assets/images/project-13.png'
 
 // Constants
 export const apiKey = 'pk.eyJ1IjoiZmFkb25pIiwiYSI6ImNrMTk4c3R2YzF6cWQzY3FkamhuMG5mcjIifQ.LfebauCCVH_wlLTS6a360A'
@@ -19,7 +21,21 @@ export const pinnedPortfolioProjects = [
 		image: project6,
 		repoLink: 'https://github.com/HenriqueFadoni/Portfolio-2019',
 		webLink: 'https://master.d2epdsxxe4w061.amplifyapp.com/'
-	}
+	},
+	{
+		name: 'Search Algo',
+		tag: 'React',
+		image: project12,
+		repoLink: 'https://github.com/HenriqueFadoni/SearchAlgorithm',
+		webLink: 'https://master.d47132dr7fus.amplifyapp.com/'
+	},
+	{
+		name: 'FadoniMedia',
+		tag: 'React',
+		image: project13,
+		repoLink: 'https://github.com/HenriqueFadoni/fadoni-media',
+		webLink: 'https://www.fadonimedia.com/'
+	},
 ]
 
 // All Portfolio Projects
